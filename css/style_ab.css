@@ -1,0 +1,5322 @@
+@charset "utf-8";
+
+/*---------------------------
+
+LP D01 2024年12月～のABテスト用HTML用のCSS
+モバイルファーストで記述してあります。
+
+---------------------------*/
+html {
+	font-size: 14px;
+}
+
+body {
+	color: #333;
+	line-height: 1.7;
+	font-family: "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+}
+
+a {
+	color: #333;
+	text-decoration: none;
+}
+
+.a:hover {
+	opacity: 0.9;
+	cursor: pointer;
+}
+
+.cf:after {
+	content: "";
+	clear: both;
+	display: block;
+}
+
+img {
+	max-width: 100%;
+	width: auto;
+	height: auto;
+}
+
+.pc-none {
+	display: block;
+}
+
+.sp-none {
+	display: none;
+}
+
+br.sp-only {
+	display: inline-block;
+}
+
+.mk-yellow {
+	background: linear-gradient(rgba(255, 249, 133, 0) 60%, #FFF985 50%);
+}
+
+.c-red {
+	color: #f00;
+}
+
+.mb-05rem {
+	margin-bottom: 0.5rem;
+}
+
+.mb-1rem {
+	margin-bottom: 1rem;
+}
+
+.mb-2rem {
+	margin-bottom: 2rem;
+}
+
+.mb-3rem {
+	margin-bottom: 3rem;
+}
+
+.mb-4rem {
+	margin-bottom: 4rem;
+}
+
+.mb-5rem {
+	margin-bottom: 5rem;
+}
+
+.mb-6rem {
+	margin-bottom: 6rem;
+}
+
+
+
+
+
+
+
+
+
+
+/* =========================
+   無料学習相談でお話しする内容
+========================= */
+.consult-talk-section {
+  /*padding: 48px 16px 80px;*/
+	padding: 0px 0px 100px 0px;
+  background: transparent; /* 背景なし */
+}
+
+.consult-talk-inner {
+/*  max-width: 1100px;*/
+  margin: 0 auto;
+	background: #DBEFFC;
+}
+
+.consult-talk-title {
+  text-align: center;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.3;
+  margin: 0;
+  color: #111;
+}
+
+.consult-talk-underline {
+  width: 70px;
+  height: 4px;
+  background: #22b3c8;
+  border-radius: 999px;
+  margin: 14px auto 26px;
+}
+
+.consult-talk-card {
+  background: #fff;
+  border-radius: 18px;
+	margin: auto;
+	width: 650px;
+	/*padding: 20px 0px 0px 0px;*/
+	padding: 34px 46px 28px;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.06);*/
+}
+
+/* ▼ reset.css 等で list-style が消されても復活させる */
+.consult-talk-list{
+  list-style-type: disc !important;
+  list-style-position: outside !important;
+  margin: 0 !important;
+  padding-left: 1.4em !important;
+}
+
+.consult-talk-list li{
+  display: list-item !important;
+  margin: 10px 0;
+  color: #111;
+  font-size: 19px;
+  line-height: 1.9;
+}
+
+/* 「まずは…」の強調 */
+.consult-talk-note {
+	padding-bottom: 100px;
+  margin: 28px auto 0;
+  text-align: center;
+  font-weight: 800;
+  font-size: 30px;
+  line-height: 1.6;
+  color: #111;
+}
+
+/* レスポンシブ */
+@media (max-width: 768px) {
+  .consult-talk-section { /*padding: 36px 14px 52px;*/ }
+  .consult-talk-title { font-size: 22px; }
+  .consult-talk-card { width:90%; padding: 22px 18px 18px; border-radius: 14px; }
+  .consult-talk-list li { font-size: 17px; line-height:1.5; }
+  .consult-talk-note {font-size: 21px; margin-top: 22px;}
+}
+
+/* =========================
+   メガスタ受講生 救済キャンペーン
+========================= */
+.relief-cp-section {
+  padding: 2.5rem 1rem 3rem;
+  background: #f7f9fc;
+}
+
+.relief-cp-inner {
+  max-width: 860px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.relief-cp-title {
+  font-family: "Hiragino Mincho ProN", "Yu Mincho", "YuMincho", "MS PMincho", serif;
+  font-weight: 600;
+  font-size: clamp(1.35rem, 4vw, 1.85rem);
+  line-height: 1.45;
+  letter-spacing: 0.04em;
+  color: #1a2744;
+  margin: 0 0 1rem;
+}
+
+.relief-cp-sub {
+  font-size: 1rem;
+  line-height: 1.85;
+  color: #333;
+  margin: 0 0 1.25rem;
+  text-align: left;
+}
+
+.relief-cp-lead {
+  font-size: 0.98rem;
+  line-height: 1.95;
+  color: #444;
+  margin: 0 0 1.75rem;
+  text-align: left;
+}
+
+.relief-cp-banner {
+  margin: 0 0 1.5rem;
+}
+
+.relief-cp-banner img {
+  display: block;
+  width: 100%;
+  max-width: 720px;
+  height: auto;
+  margin: 0 auto;
+  border-radius: 8px;
+}
+
+.relief-cp-details {
+  text-align: left;
+  border: 1px solid #d8dee8;
+  border-radius: 12px;
+  background: #fff;
+  overflow: hidden;
+}
+
+.relief-cp-summary {
+  list-style: none;
+  cursor: pointer;
+  padding: 1rem 2.75rem 1rem 1.25rem;
+  font-weight: 700;
+  font-size: 1.05rem;
+  color: #1a2744;
+  position: relative;
+  outline: none;
+  text-align: center;
+  background: #eef3f9;
+}
+
+.relief-cp-summary::-webkit-details-marker {
+  display: none;
+}
+
+.relief-cp-summary::after {
+  content: "＋";
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+.relief-cp-details[open] > .relief-cp-summary::after {
+  content: "－";
+}
+
+.relief-cp-summary:focus-visible {
+  box-shadow: inset 0 0 0 3px rgba(0, 140, 255, 0.25);
+}
+
+.relief-cp-panel {
+  padding: 1.5rem 1.25rem 1.75rem;
+  border-top: 1px solid #e6eaf0;
+}
+
+.relief-cp-block {
+  margin-bottom: 1.35rem;
+}
+
+.relief-cp-block:last-of-type {
+  margin-bottom: 0;
+}
+
+.relief-cp-block-title {
+  font-weight: 700;
+  font-size: 1rem;
+  color: #1a2744;
+  margin: 0 0 0.5rem;
+}
+
+.relief-cp-block-text {
+  font-size: 0.95rem;
+  line-height: 1.9;
+  color: #444;
+  margin: 0;
+}
+
+.relief-cp-list {
+  list-style-type: disc !important;
+  list-style-position: outside !important;
+  margin: 0.75rem 0 0 !important;
+  padding-left: 1.35em !important;
+}
+
+.relief-cp-list li {
+  display: list-item !important;
+  font-size: 0.95rem;
+  line-height: 1.8;
+  color: #444;
+  margin: 0.35rem 0;
+}
+
+.relief-cp-note {
+  font-size: 0.82rem;
+  line-height: 1.75;
+  color: #666;
+  margin: 0.85rem 0 0;
+}
+
+.relief-cp-cta-wrap {
+  text-align: center;
+  margin: 1.5rem 0 1rem;
+}
+
+.relief-cp-cta-wrap .relief-cp-cta-sp.cta_sp {
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto 0;
+}
+
+.relief-cp-cta-wrap .relief-cp-cta-pc {
+  display: none;
+}
+
+.relief-cp-cta-wrap a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.relief-cp-footnote {
+  font-size: 0.72rem;
+  line-height: 1.7;
+  color: #666;
+  margin: 0 0 1.25rem;
+  text-align: center;
+}
+
+.relief-cp-closing {
+  font-size: 0.95rem;
+  line-height: 1.9;
+  color: #333;
+  margin: 0;
+  font-weight: 700;
+}
+
+@media (max-width: 480px) {
+  .relief-cp-section {
+    padding: 1.75rem 0.875rem 2.25rem;
+  }
+}
+
+@media screen and (min-width: 897px) {
+  .relief-cp-cta-wrap .relief-cp-cta-sp {
+    display: none !important;
+  }
+
+  .relief-cp-cta-wrap .relief-cp-cta-pc {
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background: transparent;
+  }
+
+  .relief-cp-cta-wrap .relief-cp-cta-pc .inner {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .relief-cp-cta-wrap .relief-cp-cta-pc .column.line-btn {
+    width: 70%;
+    text-align: center;
+  }
+
+  .relief-cp-cta-wrap .relief-cp-cta-pc .form-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 90px;
+    padding: 0 30px 0 80px;
+    background-color: #15ba55;
+    font-size: 1.2rem;
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 45px;
+    margin-bottom: 0.8rem;
+    background-image: url("../images/icon_line.svg");
+    background-position: left 28px center, left 80px center, right 30px center;
+    background-size: 44px auto, 25px auto, 17px auto;
+    background-repeat: no-repeat;
+  }
+
+  .relief-cp-cta-wrap .relief-cp-cta-pc .form-btn:hover {
+    opacity: 0.8;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*--------------------- ヘッダー ----------------------------*/
+header {
+	width: 100%;
+	border-bottom: 1px solid #C9C7C8;
+}
+
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	padding: 0.6rem 0.4rem 0.4rem;
+}
+
+.header .logo {
+	width: 170px;
+	height: auto;
+}
+
+.header .btn {
+	display: block;
+	padding: 0.5rem 1.2rem;
+	/*background: #0060B5;ネイビー*/
+	background: #15BA55;
+	color: #fff;
+	font-weight: bold;
+	line-height: 1.3;
+	border-radius: 0.5rem;
+}
+
+.header .pc-menu {
+	display: none;
+}
+
+/*--------------------- アイキャッチ --------------------------*/
+.eyecatch_d-box {
+	width: 100%;
+	margin: 0 auto 2rem;
+	text-align: center;
+	border-bottom: 1px solid #cce4ff;
+}
+
+.eyecatch_d01-box {
+	width: 100%;
+	margin-bottom: 2rem;
+}
+
+.eyecatch_d01-box .target {
+	width: 100%;
+	padding: 0.3rem;
+	font-size: 0.9rem;
+	color: #fff;
+	font-weight: bold;
+	text-align: center;
+	background-color: #003A70;
+}
+
+.eyecatch_d01-box .sp-box {
+	width: 100%;
+	padding-bottom: 13px;
+	background-image: url("../images/d01-2_eye_sp_bg.jpg");
+	background-size: cover;
+}
+
+.eyecatch_d01-box .sp-box img {
+	width: 100%;
+	height: auto;
+}
+
+.eyecatch_d01-box .pc-box {
+	display: none;
+}
+
+
+/*アイキャッチ成績保証版*/
+.eyecatch_guarantee-box {
+	width: 100%;
+	margin-bottom: 2rem;
+	background-image: url("../images/guarantee_eye_sp_bg.jpg");
+	background-size: cover;
+	background-position: top center;
+}
+
+.eyecatch_guarantee-box img.sp {
+	display: block;
+	width: 100%;
+}
+
+.eyecatch_guarantee-box .pc-box {
+	margin: 0 auto;
+	text-align: center;
+	background-image: url("../images/guarantee_eye_pc_bg.jpg");
+	display: none;
+}
+
+/*アイキャッチ2024年ABテスト用*/
+.eyecatch_ab2024-box {
+	width: 100%;
+	max-width: 1920px;
+	margin: 0 auto 2rem;
+	background-size: cover;
+	background-position: top center;
+}
+.eyecatch_ab2024-box.ab2024-a{
+	background-image: url("../images/ab2024_eye-catch_a_sp.jpg");
+}
+
+.eyecatch_ab2024-box.ab2024-b{
+	background-image: url("../images/ab2024_eye-catch_b_sp.jpg");
+}
+
+.eyecatch_ab2024-box.ab2025-c{
+	background-image: url("../images/ab2025-05_eye-catch_c_sp.jpg");
+}
+
+.eyecatch_ab2024-box.ab2025-d{
+	background-image: url("../images/ab2025-05_eye-catch_d_sp.jpg");
+}
+
+
+
+
+
+/*--------------------- 成績保証コンテンツ --------------------------*/
+#guarantee {
+	width: 90%;
+	margin: 0 auto 5rem;
+}
+
+#guarantee h2 {
+	width: 100%;
+	margin-bottom: 1.4rem;
+	font-size: 1.6rem;
+	font-weight: bold;
+	text-align: center;
+	line-height: 1.6em;
+}
+
+#guarantee h2 .large {
+	font-size: 1.4em;
+	color: #E91400;
+}
+
+#guarantee .target {
+	width: 100%;
+	margin-bottom: 0.5rem;
+	font-size: 1.2rem;
+	font-weight: bold;
+	text-align: center;
+}
+
+#guarantee h3 {
+	width: 100%;
+	margin-bottom: 0.6rem;
+	padding: 0.3em;
+	font-size: 1.1rem;
+	font-weight: bold;
+	text-align: center;
+	color: #fff;
+	background-color: #0060B5;
+}
+
+#guarantee .guarantee-img {
+	width: 100%;
+	margin-bottom: 2rem;
+}
+
+#guarantee .arrow {
+	width: 0;
+	height: 0;
+	margin: 0 auto 1rem;
+	border-style: solid;
+	border-width: 20px 28px 0 28px;
+	border-color: #0060B5 transparent transparent transparent;
+}
+
+#guarantee .not-text {
+	width: 106%;
+	margin-left: -3%;
+	margin-right: -3%;
+	font-size: 1.35rem;
+	font-weight: bold;
+	text-align: center;
+	line-height: 1.6em;
+}
+
+#guarantee .not-text .large {
+	font-size: 1.2em;
+	color: #E91400;
+}
+
+#guarantee .not-img-sp {
+	display: block;
+	width: 85%;
+	margin: 0 auto;
+}
+
+#guarantee .not-img-pc {
+	display: none;
+}
+
+/*--------------------- コーチング --------------------------*/
+.coaching-img_sp {
+	display: block;
+	width: 100%;
+	height: auto;
+	margin-bottom: 3rem;
+}
+
+.coaching-img_pc {
+	display: none;
+}
+
+.dz-tutors-text {
+	width: 90%;
+	margin: 0 auto;
+	margin-bottom: 1rem;
+	font-size: 1.7rem;
+	color: #014E9F;
+	font-weight: bold;
+	text-align: center;
+	line-height: 1.5;
+}
+
+.dz-tutors-text .small-text {
+	font-size: 0.9em;
+}
+
+.dz-tutors-img {
+	flex-wrap: wrap;
+	display: flex;
+	justify-content: space-between;
+	align-content: flex-start;
+	width: 90%;
+	margin: 0 auto 2rem;
+}
+
+.dz-tutors-img img {
+	width: 24%;
+	height: auto;
+	margin-bottom: 9px;
+	box-shadow: 0px 0px 7px -3px rgba(0, 0, 0, 0.6);
+}
+
+/*--------------------- キャンペーン --------------------------*/
+.campaign-cv-upper {
+	padding-top: 1rem;
+	/*background-color: #DBEFFC;*/
+}
+
+.campaign-sp {
+	display: block;
+	width: 76%;
+	height: auto;
+	margin: 0 auto 3rem;
+	/* box-shadow: 0px 1px 3px 3px rgba(0, 0, 0, 0.1);*/
+}
+
+.campaign-sp.cv {
+	margin: 0 auto 3rem;
+}
+
+.campaign-pc {
+	display: none;
+}
+
+/*--------------------- CTA --------------------------*/
+.cta_sp {
+	width: 90%;
+	margin: 0 auto 6rem;
+}
+
+.cta_sp.lp-d01_eye {
+	width: 94%;
+	margin: 13px auto 0;
+	padding: 0.5rem;
+	background-color: rgba(255, 255, 255, 0.85);
+}
+
+.cta_sp .balloon {
+	position: relative;
+	display: inline-block;
+	width: 100%;
+	margin-bottom: 1rem;
+	padding: 0.7em;
+	font-size: 1.2rem;
+	font-weight: bold;
+	text-align: center;
+	color: #0060B5;
+	text-shadow: 0 0 5px #fff;
+	background: -webkit-repeating-linear-gradient(-45deg, #DFF6FA, #DFF6FA 3px, #fff 3px, #fff 7px);
+	background: repeating-linear-gradient(-45deg, #DFF6FA, #DFF6FA 3px, #fff 3px, #fff 7px);
+}
+
+.cta_sp .balloon::before {
+	content: "";
+	border-width: 10px;
+	border-style: solid;
+	border-color: #EBF8FA transparent transparent transparent;
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.cta_sp .upper-text {
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+	margin-bottom: 0.5rem;
+	font-size: 1.25rem;
+	text-align: center;
+	font-weight: bold;
+	line-height: 1.3;
+	/*color: #0072C8;*/
+}
+
+.cta_sp .upper-text .large-text {
+	font-size: 1.3em;
+}
+
+.cta_sp .upper-text::before,
+.cta_sp .upper-text::after {
+	content: '';
+	width: 2px;
+	height: 22px;
+	/* background-color: #0072C8; ネイビー*/
+	background-color: #15BA55;
+}
+
+.cta_sp .upper-text::before {
+	margin-right: 10px;
+	transform: rotate(-35deg)
+}
+
+.cta_sp .upper-text::after {
+	margin-left: 10px;
+	transform: rotate(35deg)
+}
+
+.cta_sp .btn {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+	width: 100%;
+	height: 62px;
+	padding: 0 0.9rem;
+	font-size: 1.3rem;
+	text-align: center;
+	font-weight: bold;
+	background-repeat: no-repeat;
+	border-radius: 35px;
+}
+
+/* ネイビー LINEなし
+.cta_sp .btn.form {
+  margin-bottom: 0.8rem;
+  background-image: url("../images/cta_icon_form_white.svg"), url("../images/cta_icon_arrow.svg");
+  background-position: left 20px center, right 20px center;
+  background-size: auto 1.2em, 1.2em auto;
+  background-color: #0060B5;
+  color: #fff;
+}
+*/
+/*グリーン LINEあり*/
+.cta_sp .btn.form {
+	margin-bottom: 0.8rem;
+	padding: 0 40px 0 50px;
+	background-image: url("../images/icon_line.svg"), url("../images/icon_arrow_white.svg");
+	background-position: left 20px center, right 20px center;
+	background-size: 34px auto, 15px auto;
+	background-color: #15BA55;
+	color: #fff;
+}
+
+.cta_sp .btn.tel {
+	background-image: url("../images/freeaccess_navy.svg");
+	background-position: left 18px center;
+	background-size: auto 2em;
+	background-color: #fff;
+	border: 2px solid #0060B5;
+	color: #0060B5;
+}
+
+.cta_sp .btn.tel .number {
+	display: block;
+	width: 100%;
+	font-size: 1em;
+	line-height: 1.3;
+}
+
+.cta_sp .btn.tel .time {
+	display: block;
+	width: 100%;
+	font-size: 0.65em;
+	font-weight: normal;
+}
+
+.cta_pc {
+	display: none;
+}
+
+/*--------------------- fotterのCTA ------------------------------------*/
+#footer__cv-area {
+	display: block;
+	width: 100%;
+	position: fixed;
+	left: 0;
+	z-index: 1000;
+	bottom: -150px;
+	padding: 10px;
+	font-weight: bold;
+	background-color: rgba(255, 255, 255, 0.85);
+	transition-duration: 0.5s;
+}
+
+#footer__cv-area.show {
+	bottom: 0px;
+	transition-duration: 0.5s;
+}
+
+#footer__cv-area .inner {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+}
+
+#footer__cv-area .column {
+	text-align: center;
+}
+
+#footer__cv-area .column.document {
+	/*width: 46%;*/
+	width: 98%;
+	max-width: 650px;
+}
+
+#footer__cv-area .column.tel {
+	width: 52%;
+}
+
+#footer__cv-area .column__text {
+	position: relative;
+	display: inline-block;
+	padding: 0 17px;
+	color: #0060B5;
+	font-size: 1rem;
+}
+
+#footer__cv-area .column.document .column__text {
+	color: #15BA55;
+}
+
+#footer__cv-area .column__text::before,
+#footer__cv-area .column__text::after {
+	content: '';
+	position: absolute;
+	top: 50%;
+	display: inline-block;
+	width: 17px;
+	height: 1px;
+	background-color: #0060B5;
+}
+
+#footer__cv-area .column.document .column__text::before,
+#footer__cv-area .column.document .column__text::after {
+	background-color: #15BA55;
+}
+
+#footer__cv-area .column__text::before {
+	-webkit-transform: rotate(60deg);
+	transform: rotate(60deg);
+}
+
+#footer__cv-area .column__text::after {
+	-webkit-transform: rotate(-60deg);
+	transform: rotate(-60deg);
+}
+
+#footer__cv-area .column__text::before {
+	left: -5px;
+}
+
+#footer__cv-area .column__text::after {
+	right: -5px;
+}
+
+#footer__cv-area .column__btn {
+	width: 100%;
+	height: 60px;
+	/*	line-height: 50px;*/
+	font-weight: bold;
+}
+
+#footer__cv-area .column__btn.document {
+	padding-right: 5px;
+	/*background-color: #0060B5;　ネイビー*/
+	background-color: #15BA55;
+	color: #fff;
+	font-size: 1.2rem;
+	line-height: 60px;
+}
+
+#footer__cv-area .column__btn.tel {
+	border: 2px solid #0060B5;
+	background-color: #fff;
+}
+
+#footer__cv-area .column__document-text {
+	width: 100%;
+	color: #fff !important;
+	/*text-align: center;*/
+}
+
+/* メールアイコン
+#footer__cv-area .column__document-text::before {
+  content: '';
+  display: inline-block;
+  width: 25px;
+  height: 15px;
+  margin-right: 0.5rem;
+  background-image: url("../images/cta_icon_form_white.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top -1px left 0;
+  vertical-align: middle;
+}
+*/
+#footer__cv-area .column__document-text::before {
+	content: '';
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	margin-right: 6px;
+	background-image: url("../images/icon_line.svg");
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center left 0;
+	vertical-align: middle;
+}
+
+
+
+
+#footer__cv-area .column__tel-text {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 60px;
+	/*text-align: center;*/
+	line-height: 1.2;
+	color: #0060B5 !important;
+}
+
+/*
+#footer__cv-area .column__tel-text .box {
+	margin: 0 auto;
+	width: 100%;
+}
+*/
+#footer__cv-area .column__tel-text .number {
+	display: block;
+	width: 100%;
+	font-size: 0.9rem;
+}
+
+#footer__cv-area .column__tel-text .time {
+	display: block;
+	width: 100%;
+	font-size: 0.8rem;
+	font-weight: normal;
+}
+
+#footer__cv-area .column__tel-text .time .time-tel {
+	display: none;
+}
+
+#footer__cv-area .column__tel-text::before {
+	content: '';
+	display: inline-block;
+	width: 28px;
+	height: 26px;
+	margin-right: 0.3rem;
+	background-image: url("../images/freeaccess_orange.svg");
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: top -1px left 0;
+	vertical-align: middle;
+}
+
+/*--------------------- h2と背景など共通の部品 ------------------------------------*/
+.h2-box {
+	display: inline-block;
+	position: relative;
+}
+
+.h2-box .upper {
+	font-size: 1rem;
+}
+
+.h2-box h2 {
+	font-size: 1.6rem;
+}
+
+.h2-box h2:before {
+	display: inline-block;
+	position: absolute;
+	content: '';
+	bottom: -10px;
+	/*下線の上下の位置*/
+	left: 50%;
+	width: 30px;
+	/*下線の幅*/
+	height: 2px;
+	-moz-transform: translateX(-50%);
+	-webkit-transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	transform: translate(-50%);
+	background-color: #27BDD6;
+}
+
+.content {
+	width: 92%;
+	margin: 0 auto;
+}
+
+.bg-dot {
+	background-image: url("../images/bg_blue_sp.png");
+	background-position: top -120px center;
+	background-size: cover;
+}
+
+
+
+
+
+
+
+
+
+/*---------------- こんなお悩みありませんか？ ---------------------*/
+#worry{
+	padding: 2.8rem 0 0.5rem;
+}
+#worry .worry-title{
+	margin-bottom: 0.6rem;
+	text-align: center;
+	font-weight: bold;
+}
+
+#worry .worry-title .child{
+	position: relative;
+    padding-bottom: 0.6em;
+    margin-bottom: 0.7rem;
+	display: inline-block;
+	font-size: 1.2rem;
+	line-height: 1;
+}
+
+#worry .worry-title .child::before {
+    position: absolute;
+    border-bottom: 4px solid #f9c000;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    content: '';
+}
+
+#worry .worry-title .problems{
+	display: block;
+	font-size: 1.9rem;
+}
+#worry .worry-illust-box{
+	width: 90%;
+	max-width: 1050px;
+	margin: 0 auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*---------------- オンライン家庭教師ドリームが解決します-------------*/
+#solution{
+	position: relative;
+	padding: 3.2rem 0 0;
+	background-color: #fffbe6;
+}
+#solution::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    border-top: 30px solid #fff;
+    border-right: 50px solid transparent;
+    border-left: 50px solid transparent;
+}
+
+#solution .solution-title{
+	margin-bottom: 2.5rem;
+	text-align: center;
+	font-weight: bold;
+}
+#solution .solution-title .child{
+	position: relative;
+	display: inline-block;
+    padding: 9px 15px;
+    margin: 0 auto 1rem;
+	font-size: 1.1rem;
+	line-height: 1;
+	letter-spacing: 0.05em;
+	background: #f9c000;
+    border-radius: 9999px;
+}
+#solution .solution-title .child::before{
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-top: 10px solid #f9c000;
+    border-right: 10px solid transparent;
+    border-left: 10px solid transparent;
+}
+#solution .solution-title .solution{
+	display: block;
+	font-size: 2.4rem;
+	font-weight: bold;
+	line-height: 1.4;
+}
+#solution .solution-title .solution .dream{
+	display: block;
+	color: #0567b2;
+}
+#solution .solution-title .mk-yellow{
+	background: linear-gradient(rgba(252, 228, 145, 0) 75%, #fce491 25%);
+
+}
+#solution .solutions-box{
+	width: 90%;
+	max-width: 1000px;
+	margin: 0 auto 2rem;
+}
+#solution .solutions-box .column:not(:last-child){
+	margin-bottom: 3.9rem;
+}
+#solution .solutions-box .text-box .title{
+	margin-bottom: 10px;
+	font-weight: bold;
+	text-align: center;
+}
+#solution .solutions-box .text-box .title .balloon{
+	position: relative;
+	display: inline-block;
+    padding: 9px 15px;
+    margin: 0 auto 12px;
+	/*font-size: 1.15rem;*/
+	font-size: 1.10rem;
+	color: #fff;
+	line-height: 1;
+	letter-spacing: 0.05em;
+	background: #0567b2;
+    border-radius:5px;
+}
+
+#solution .solutions-box .text-box .title .balloon::before{
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-top: 5px solid #0567b2;
+    border-right: 5px solid transparent;
+    border-left: 5px solid transparent;
+}
+#solution .solutions-box .text-box .title .large-text{
+	display: block;
+	font-size: 1.75rem;
+	line-height: 1.3em;
+}
+#solution .solutions-box .img-box{
+	padding-top: 1rem;
+	text-align: center;
+}
+#solution .solutions-box .img-box.exam-measures{
+	padding-top: 0;
+}
+
+#solution .solutions-box .img-box img{
+	width: 85%;
+	max-width: 400px;
+}
+#solution .solution-inner-cta{
+	padding: 2.7rem 0;
+	background-color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.heading01-title{
+	color: #0567b2;
+	font-size: 2.2rem;
+	margin-bottom: 2.5rem;
+	text-align: center;
+	font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.buckup-box {
+	width: 100%;
+	padding: 2rem 0 2rem;
+	background-color: #F8F9FA;
+}
+.buckup-box .inner-box {
+	width: 90%;
+	margin: 0 auto;
+}
+.buckup-box .inner-box .column {
+	width: 100%;
+	background-color: #fff;
+	margin-bottom: 1rem;
+	padding: 1.5rem 1rem;
+}
+.buckup-box .inner-box .column .title {
+	display: block;
+	width: 100%;
+	font-size: 1.1rem;
+	font-weight: bold;
+	color: #27BDD6;
+	text-align: center;
+}
+.buckup-box .inner-box .column .inner {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+}
+.buckup-box .inner-box .column .inner .img {
+	width: 40%;
+	height: auto;
+}
+.buckup-box .inner-box .column .inner .img img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.buckup-box .inner-box .column .inner .text {
+	width: 58%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*--------------------- 新 ダイレクトゼミの4つの特長 --------------------------*/
+#forte {
+	width: 100%;
+	margin-bottom: 4.5rem;
+	padding: 2.8rem 0 3rem;
+	background-color: #DBEFFC;
+}
+
+#forte .inner .sub-title {
+	font-size: 1.15rem;
+	font-weight: bold;
+	text-align: center;
+}
+
+#forte .inner .title {
+	margin-bottom: 1rem;
+	font-size: 2.4rem;
+	font-weight: bold;
+	text-align: center;
+	color: #e91400;
+	line-height: 1.3;
+}
+
+#forte .inner .title span {
+	font-size: 0.85em;
+}
+
+#forte .inner .forte-box {
+	width: 85%;
+	margin: 0 auto;
+}
+
+#forte .inner .forte-box .column {
+	width: 100%;
+	margin-bottom: 1.6rem;
+}
+
+#forte .inner .forte-box .column:last-child {
+	margin-bottom: 0;
+}
+
+#forte .inner .forte-box .column .image {
+	width: 88%;
+	margin: 0 3% 0.5rem 9%;
+}
+
+#forte .inner .forte-box .column .text {
+	/*font-family: "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";*/
+	width: 90%;
+	margin: 0 auto;
+	font-size: 1.2rem;
+	font-weight: bold;
+}
+
+/*--------------------- 他社オンライン家庭教師と比較 --------------------------*/
+#comparison {
+	width: 100%;
+	margin-bottom: 4.5rem;
+}
+
+#comparison .inner {
+	width: 86%;
+	margin: 0 auto;
+}
+
+#comparison .inner .title {
+	font-size: 1.5rem;
+	font-weight: bold;
+	text-align: center;
+	color: #E91400;
+	line-height: 1.3;
+}
+
+#comparison .inner .sub-title {
+	margin-bottom: 0.5rem;
+	font-size: 1.2rem;
+	font-weight: bold;
+	text-align: center;
+}
+
+#comparison .inner .sub-title br {
+	display: none;
+}
+
+#comparison .inner .comparison_table_sp {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+#comparison .inner .comparison_table_pc {
+	display: none;
+}
+
+/*--------------------- 指導方針 --------------------------*/
+#guidance {
+	width: 100%;
+	margin-bottom: 4.5rem;
+}
+
+#guidance .inner {
+	width: 92%;
+	margin: 0 auto;
+}
+
+#guidance .inner .title {
+	margin-bottom: 0.5rem;
+	font-size: 2.2rem;
+	font-weight: bold;
+	text-align: center;
+	color: #E91400;
+	line-height: 1.3;
+}
+
+#guidance .inner .sub-title {
+	margin-bottom: 1rem;
+	font-size: 1.2rem;
+	font-weight: bold;
+	text-align: center;
+}
+
+#guidance .inner .guidance_img_sp {
+	display: block;
+	margin-bottom: 0.5rem;
+	width: 100%;
+	height: auto;
+}
+
+#guidance .inner .guidance_img_pc {
+	display: none;
+}
+
+#guidance .inner .result-text {
+	margin-bottom: 1rem;
+	font-size: 1.4rem;
+	font-weight: bold;
+	text-align: center;
+}
+
+
+/*--------------------- 悩み --------------------------*/
+.worry {
+	width: 100%;
+	margin-bottom: 3rem;
+	padding: 2rem 1.5rem;
+	background-image: url("../images/worry_girl.png"), url("../images/worry_bg.png");
+	background-size: auto 130px, 35px 35px;
+	background-repeat: no-repeat, repeat;
+	background-position: right 12px bottom 25px, 0 0;
+}
+
+.worry .title {
+	width: 100%;
+	margin-bottom: 1.9rem;
+	font-size: 1.4rem;
+	text-align: center;
+	font-weight: bold;
+	color: #0060B5;
+}
+
+.worry .title .upper {
+	font-size: 0.8em;
+	color: #333;
+}
+
+.worry ul li {
+	position: relative;
+	padding-left: 1.2em;
+	width: 100%;
+	min-height: 22px;
+	margin-bottom: 1rem;
+	line-height: 1.8em;
+	font-size: 1.2rem;
+	font-weight: bold;
+}
+
+.worry ul li::before {
+	position: absolute;
+	left: 0;
+	top: 0.4em;
+	content: "";
+	display: inline-block;
+	height: 1em;
+	width: 1em;
+	vertical-align: middle;
+	margin-right: 0.2rem;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: left -2em top 0;
+	background: url("../images/worry_check_icon.svg");
+}
+
+.worry ul li .red {
+	color: #f00;
+}
+
+.worry-answer-arrow {
+	display: block;
+	margin: 0 auto 0.5rem;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 40px 35px 0 35px;
+	border-color: #FA9E0F transparent transparent transparent;
+}
+
+.worry-answer {
+	width: 100%;
+	margin-bottom: 4rem;
+	padding: 2rem 0;
+	background-color: #FCFAE4;
+}
+
+.worry-answer .title {
+	width: 100%;
+	margin-bottom: 1rem;
+	padding: 0 1rem;
+	font-size: 1.1rem;
+	font-weight: bold;
+	color: #F97F05;
+	text-align: center;
+
+}
+
+.worry-answer .inner {
+	width: 92%;
+	margin: 0 auto;
+	padding: 1rem 1rem;
+	background-color: #fff;
+}
+
+.worry-answer .inner .icon {
+	width: 100%;
+}
+
+.worry-answer .inner .icon img {
+	display: block;
+	width: 15%;
+	margin: 0 auto 0.5rem;
+}
+
+.worry-answer .inner .text {
+	font-size: 1rem;
+}
+
+
+/*--------------------- h2と背景など共通の部品 ------------------------------------*/
+.h2-box {
+	width: 100%;
+	text-align: center;
+	margin-bottom: 2.5rem;
+}
+
+.h2-box.feature {
+	margin-bottom: 1.9rem;
+}
+
+.h2-box .upper {
+	display: block;
+	font-size: 1rem;
+}
+
+.h2-box h2 {
+	position: relative;
+	font-size: 1.6rem;
+	font-weight: bold;
+}
+
+.h2-box h2::before {
+	content: '';
+	position: absolute;
+	left: 50%;
+	bottom: -10px;
+	/*下線の上下位置調整*/
+	display: inline-block;
+	width: 60px;
+	/*下線の幅*/
+	height: 4px;
+	/*下線の太さ*/
+	-moz-transform: translateX(-50%);
+	-webkit-transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	transform: translate(-50%);
+	/*位置調整*/
+	background-color: #27BDD6;
+	/*下線の色*/
+}
+
+/*--------------------- ダイレクトゼミの特徴 --------------------------*/
+.merit {
+	width: 100%;
+	margin-bottom: 3.5rem;
+	padding: 2rem 0;
+	background-color: #DEF7FC;
+}
+
+.merit .inner {
+	width: 90%;
+	margin: 0 auto;
+}
+
+.merit .inner .icon {
+	display: block;
+	width: 115px;
+	height: auto;
+	margin: 0 auto 0.2rem;
+}
+
+.merit .inner h3 {
+	width: 100%;
+	margin-bottom: 0.4rem;
+	font-size: 1.4rem;
+	text-align: center;
+	font-weight: bold;
+}
+
+.merit .inner .box {
+	width: 100%;
+	margin-bottom: 4.5rem;
+	padding: 1.7rem;
+	background-color: #F2FCFF;
+	border: 5px solid #fff;
+}
+
+.merit .inner .box .image {
+	display: block;
+	width: 85%;
+	height: auto;
+	margin: 0 auto 1.4rem;
+}
+
+.merit .inner .box p {
+	font-size: 1rem;
+}
+
+.merit .inner .box ul.red {
+	margin: 1em 0 1em 1.5em;
+	font-size: 1rem;
+	color: #DE2600;
+	list-style-type: none;
+}
+
+.merit .inner .box ul.red li::before {
+	margin-left: -1.2em;
+}
+
+.merit .inner .box ul.red li:first-child::before {
+	content: '1: ';
+}
+
+.merit .inner .box ul.red li:nth-child(2n)::before {
+	content: '2: ';
+}
+
+.merit .inner .box ul.red li:nth-child(3n)::before {
+	content: '3: ';
+}
+
+.merit .inner .box ul.red li:nth-child(4n)::before {
+	content: '4: ';
+}
+
+.merit .inner .box .movie-title {
+	display: block;
+	width: 100%;
+	padding: 1.5rem 0 0.5rem;
+	font-size: 1.1rem;
+	font-weight: bold;
+	text-align: center;
+}
+
+.merit .inner .box .movie-box {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: flex-start;
+	width: 100%;
+	height: auto;
+}
+
+.merit .inner .box .movie-box div {
+	width: 48%;
+	height: auto;
+	margin-bottom: 1rem;
+}
+
+.merit .inner .box .movie-box div img {
+	width: 100%;
+	height: auto;
+}
+
+/*--------------------- コース・料金 --------------------------*/
+.course {
+	width: 100%;
+	margin-bottom: 5rem;
+}
+
+.course .desc {
+	width: 90%;
+	margin: 0 auto 1rem;
+	font-size: 1rem;
+}
+
+.tab_container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+}
+
+.tab_container .tab_item {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 50%;
+	width: 6em;
+	height: 6em;
+	margin-right: 0.6rem;
+	order: -1;
+	background: #508EC7;
+	font-size: 1rem;
+	line-height: 1.3;
+	font-weight: bold;
+	text-align: center;
+	color: #fff;
+	border: 5px solid #fff;
+	box-shadow: 0px 2px 7px -2px rgba(0, 0, 0, 0.3);
+}
+
+.tab_container .tab_item:last-child {
+	margin-right: 0;
+}
+
+.tab_container input[name="tab_item"] {
+	display: none;
+}
+
+.tab_container .tab_content {
+	display: none;
+	width: 100%;
+	/*clear: both;
+	overflow: hidden;*/
+}
+
+.tab_container .tab_content .price-table_sp {
+	display: block;
+	width: 90%;
+	margin: 1rem auto 1.2rem;
+}
+
+.tab_container .tab_content .price-table_pc {
+	display: none;
+}
+
+#tab1:checked~#tab1_content,
+#tab2:checked~#tab2_content,
+#tab3:checked~#tab3_content {
+	display: block;
+}
+
+.tab_container input:checked+.tab_item {
+	width: 6em;
+	height: 6em;
+	font-size: 1.25rem;
+	background: #0060B5;
+}
+
+.tab_container .exp {
+	display: block;
+	width: 100%;
+	padding: 1.1rem 0;
+	background-color: #E3E3E3;
+}
+
+.tab_container .exp .price-ex_sp {
+	display: block;
+	width: 90%;
+	height: auto;
+	margin: 0 auto;
+}
+
+.course .price_sp {
+	display: block;
+	width: 90%;
+	height: auto;
+	margin: 0 auto 2rem;
+}
+
+.course .price_pc {
+	display: none;
+}
+
+.course .exp-box {
+	width: 100%;
+	margin-bottom: 2.5rem;
+	padding: 3rem 0;
+	text-align: center;
+	background-color: #EBEBEB;
+}
+
+.course .exp-box h3 {
+	display: none;
+}
+
+.course .exp-box .img_sp {
+	width: 90%;
+}
+
+.course .exp-box .img_pc {
+	display: none;
+}
+
+/*--------------------- 生徒・保護者様の声 ------------------------------*/
+.voice {
+	width: 90%;
+	margin: 0 auto 6rem;
+}
+
+.voice .column {
+	width: 100%;
+	margin-bottom: 2rem;
+	padding: 1.8rem;
+	border: 2px solid #27BDD6;
+}
+
+.voice .column .profile {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	margin-bottom: 0.9rem;
+}
+
+.voice .column .profile .image {
+	width: 25%;
+	height: auto;
+}
+
+.voice .column .profile .info {
+	width: 74%;
+	line-height: 1.3;
+}
+
+.voice .column .profile .info .name {
+	width: 100%;
+	font-size: 0.8rem;
+}
+
+.voice .column .profile .info h3 {
+	width: 100%;
+	margin-top: 0.3rem;
+	font-size: 1.1rem;
+	font-weight: bold;
+	color: #0060B5;
+	line-height: 1.5;
+}
+
+.voice .column .text {
+	width: 100%;
+}
+
+/* 生徒・保護者様の声 親子ver*/
+.voice-pac {
+	width: 100%;
+	margin: 0 auto 2.5rem;
+}
+
+.voice-pac .balloon {
+	position: relative;
+	display: inline-block;
+	margin: 0 0 1rem;
+	padding: 7px 10px;
+	width: 100%;
+	background: #27BDD6;
+	border-radius: 15px;
+}
+
+.voice-pac .balloon:before {
+	content: "";
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	margin-left: -10px;
+	border: 10px solid transparent;
+	border-top: 10px solid #27BDD6;
+}
+
+.voice-pac .balloon .title {
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	color: #fff;
+	font-weight: bold;
+	font-size: 1.1rem;
+}
+
+.voice-pac .box {
+	width: 100%;
+	padding: 1.5rem 1.5rem 0.5rem;
+	border: 2px solid #27BDD6;
+}
+
+.voice-pac .box .user-box {
+	width: 100%;
+	margin: 0 auto 1rem;
+	text-align: center;
+}
+
+.voice-pac .box .user-box .icon {
+	display: block;
+	width: 40%;
+	max-width: 200px;
+	height: auto;
+	margin: 0 auto 0.2rem;
+}
+
+.voice-pac .box .user-box .name {
+	display: block;
+	font-size: 1.1rem;
+	font-weight: bold;
+}
+
+.voice-pac .box .user-box .address {
+	display: block;
+	font-size: 1rem;
+}
+
+.voice-pac .box .voice-box {
+	width: 100%;
+}
+
+.voice-pac .box .voice-box .column2 {
+	width: 100%;
+}
+
+.voice-pac .box .voice-box .column2 .name {
+	display: block;
+	width: 100%;
+	text-align: center;
+	font-size: 1.1rem;
+	font-weight: bold;
+}
+
+.voice-pac .box .voice-box .column2 .name.parent {
+	color: #F75E63;
+}
+
+.voice-pac .box .voice-box .column2 .name.student {
+	color: #00B0CF;
+}
+
+.voice-pac .box .voice-box .column2 .letter {
+	width: 100%;
+	max-width: 500px;
+	margin: 0 auto 0.5rem;
+	padding: 1rem;
+}
+
+.voice-pac .box .voice-box .column2 .letter.parent {
+	border: 3px solid #FAE1E2;
+}
+
+.voice-pac .box .voice-box .column2 .letter.student {
+	border: 3px solid #D8F3F7;
+}
+
+.voice-pac .box .voice-box .column2 .letter img {
+	width: 100%;
+	height: auto;
+}
+
+.voice-pac .box .voice-box .column2 .text {
+	width: 100%;
+	font-size: 1rem;
+	margin-bottom: 1rem;
+}
+
+/*--------------------- 生徒・保護者様の声 動画部分 ------------------------------*/
+
+.movie-box {
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto 7rem;
+	background-image: url("../images/voice_movie_bg_sp.png");
+	background-size: contain;
+}
+
+.movie-box .inner {
+	width: 90%;
+	max-width: 1000px;
+	margin: 0 auto;
+}
+
+.movie-box .movie-title {
+	position: relative;
+	margin-bottom: 1.5rem;
+	padding: 0.5em 1em 0.5em 3em;
+	background-color: #FC7F89;
+	color: #fff;
+	font-size: 1.4rem;
+	font-weight: bold;
+	line-height: 1.4;
+	text-align: center;
+	border-radius: 12px;
+}
+
+.movie-box .movie-title img.movie-deco {
+	position: absolute;
+	top: -10px;
+	left: -10px;
+	width: 75px;
+	height: auto;
+}
+
+.movie-box .movie-inner {
+	width: 100%;
+	max-width: 800px;
+	margin: 0 auto;
+}
+
+.voice-youtube {
+	position: relative;
+	width: 100%;
+	margin: 0 auto 0.5rem;
+	padding-top: 56.25%;
+}
+
+.voice-youtube iframe {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.movie-chat {
+	width: 100%;
+	margin: 0 auto;
+}
+
+.movie-chat .balloon-box {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	margin-bottom: 0.5rem;
+}
+
+.movie-chat .balloon-box:last-child {
+	margin-bottom: 0;
+}
+
+.movie-chat .balloon-box .icon-box {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 60px;
+	height: 100%;
+	text-align: center;
+}
+
+.movie-chat .balloon-box .icon-box img {
+	display: block;
+	border-radius: 50%;
+	margin-bottom: 5px;
+}
+
+.movie-chat .balloon-box .icon-box span {
+	font-size: 0.6rem;
+	line-height: 1.3;
+	font-weight: bold;
+	text-align: center;
+
+}
+
+.movie-chat .balloon-box.girl .icon-box span {
+	color: #E84F4F;
+}
+
+.movie-chat .balloon-box.father .icon-box span {
+	color: #00B8D9;
+}
+
+.movie-chat .balloon-box p {
+	position: relative;
+	/*width: 90%;*/
+	max-width: calc(100% - 80px);
+	margin: 3px 0 0;
+	padding: .8em 1em;
+	border-radius: 5px;
+	background-color: #e0efff;
+	font-size: 0.9rem;
+}
+
+.movie-chat .balloon-box.girl p {
+	margin-left: 15px;
+	background-color: #FFEBEB;
+}
+
+.movie-chat .balloon-box.father p {
+	margin-right: 15px;
+	background-color: #E9F8FA;
+}
+
+.movie-chat .balloon-box.girl p::before {
+	position: absolute;
+	content: '';
+	left: -22px;
+	top: 30%;
+	border: 15px solid transparent;
+	border-right: 15px solid #FFEBEB;
+}
+
+.movie-chat .balloon-box.father p::before {
+	position: absolute;
+	content: '';
+	right: -22px;
+	top: 30%;
+	border: 15px solid transparent;
+	border-left: 15px solid #E9F8FA;
+}
+
+/*--------------------- 講師紹介 ------------------------------*/
+.tutor2-section {
+	margin-bottom: 6rem;
+}
+
+.tutor2-section .tutor2_title {
+	margin-bottom: 0.5rem;
+	font-size: 2rem;
+	font-weight: bold;
+	text-align: center;
+	color: #E91400;
+	line-height: 1.5;
+}
+
+.tutor2_only-text {
+	margin-bottom: 0.5rem;
+	font-size: 1.7rem;
+	font-weight: bold;
+	text-align: center;
+	line-height: 1.5;
+}
+
+.tutor2_lead-text {
+	width: 94%;
+	max-width: 1200px;
+	margin: 0 auto 0.5rem;
+	font-size: 1.2rem;
+	font-weight: bold;
+
+}
+
+.tutor2_lead-text br {
+	display: none;
+}
+
+.tutor2_tutors-img {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	width: 94%;
+	max-width: 1200px;
+	margin: 0 auto 0.5rem;
+
+}
+
+.tutor2_tutors-img img {
+	width: 19%;
+	margin-bottom: 4px;
+}
+
+.tutor2_start-step {
+	width: 94%;
+	max-width: 1200px;
+	margin: 0 auto 5rem;
+	padding: 25px 15px;
+	background-color: #DBEFFC;
+}
+
+.tutor2_step-title {
+	margin-bottom: 1.5rem;
+	font-size: 1.6rem;
+	font-weight: bold;
+	text-align: center;
+	line-height: 1.5;
+
+}
+
+.tutor2_step-figure {
+	margin-bottom: 3rem;
+	padding: 1.5rem 1rem;
+	background-color: #fff;
+	border-radius: 7px;
+	text-align: center;
+}
+
+.tutor2_column-in-img {
+	margin-bottom: 3rem;
+}
+
+.tutor2_column-in-img.b-bottom {
+	padding-bottom: 3rem;
+	border-bottom: 2px solid #fff;
+}
+
+.tutor2_column-in-img .balloon {
+	display: inline-block;
+	position: relative;
+	width: 8em;
+	margin-bottom: 15px;
+	padding: 0.5em 0.8em;
+	border-radius: 5px;
+	background-color: #1955a8;
+	color: #ffffff;
+	font-size: 1.2rem;
+	letter-spacing: 0.1em;
+	font-weight: bold;
+	text-align: center;
+}
+
+.tutor2_column-in-img .balloon::before {
+	position: absolute;
+	bottom: -5px;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 10px;
+	height: 5px;
+	background-color: #1955a8;
+	clip-path: polygon(0 0, 100% 0, 50% 100%);
+	content: '';
+}
+
+.tutor2_column-in-img .title {
+	font-size: 1.6rem;
+	font-weight: bold;
+	line-height: 1.5;
+}
+
+.tutor2_column-in-img .text {
+	margin-bottom: 1em;
+}
+
+.tutor2_training-title {
+	margin-bottom: 0.5rem;
+	font-size: 1.6rem;
+	font-weight: bold;
+	text-align: center;
+	line-height: 1.5;
+}
+
+.tutor2_point {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	margin-bottom: 3rem;
+}
+
+.tutor2_point .column {
+	display: flex;
+	flex-wrap: wrap;
+	width: 48.5%;
+	margin-bottom: 10px;
+	padding: 15px 0 10px;
+	background-color: #fff;
+	border-radius: 7px;
+}
+
+.tutor2_point .column .number-box {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 7em;
+	height: 2em;
+	margin: 0 auto 1em;
+	font-size: 0.9rem;
+	font-weight: bold;
+	color: #fff;
+	background-color: #1955a8;
+	border-radius: 9999px;
+}
+
+.tutor2_point .column .text {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	width: 100%;
+	font-size: 1.2rem;
+	font-weight: bold;
+	text-align: center;
+	line-height: 1.5;
+}
+
+.tutor2_training-lead {
+	margin-bottom: 0.5rem;
+}
+
+.tutor2_training-figure {
+	max-width: 1200px;
+	text-align: center;
+}
+
+.tutor2_pro {
+	margin-bottom: 0.5rem;
+	font-size: 1.65rem;
+	font-weight: bold;
+	text-align: center;
+	line-height: 1.5;
+}
+
+
+
+
+
+.tutor .catch {
+	width: 100%;
+	margin-bottom: 1rem;
+	font-size: 1.5rem;
+	font-weight: bold;
+	text-align: center;
+}
+
+.tutor .catch .s-text {
+	display: block;
+	font-size: 0.7em;
+	padding-top: 0.5rem;
+}
+
+.tutor-feature-box {
+	width: 85%;
+	margin: 0 auto 1.6rem;
+}
+
+.tutor-feature-box .feature-column {
+	width: 100%;
+	margin-bottom: 1.8rem;
+}
+
+.tutor-feature-box .feature-column:last-child {
+	margin-bottom: 0;
+}
+
+.tutor-feature-box .feature-column .feature-image {
+	display: block;
+	width: 60%;
+	margin: 0 auto 0.4rem;
+}
+
+.tutor-feature-box .feature-column .feature-title {
+	display: block;
+	width: 100%;
+	font-size: 1.1rem;
+	font-weight: bold;
+	color: #0060B5;
+	text-align: center;
+}
+
+.tutor-feature-box .feature-column .feature-text {
+	width: 100%;
+
+}
+
+.tutor-slider .column {
+	margin: 5px 10px 5px;
+}
+
+.tutor-slider {
+	display: flex;
+}
+
+.slick-track {
+	display: flex;
+}
+
+.slick-slide {
+	height: auto !important;
+}
+
+.slick-prev {
+	z-index: 10;
+	left: 40px;
+}
+
+.slick-next {
+	z-index: 10;
+	right: 40px;
+}
+
+.slick-prev:before,
+.slick-next:before {
+	font-size: 40px;
+	color: #333;
+	opacity: 0.4;
+}
+
+.slick-prev,
+.slick-next {
+	width: 40px;
+	height: 40px;
+}
+
+.tutor .slick-dots{
+	width: 100%;
+	bottom: -50px;
+}
+
+
+.tutor .column {
+	height: auto;
+	padding: 15px;
+	border-radius: 8px;
+	background-color: #fff;
+	border: 1px solid #f5f5f5;
+	box-shadow: 0px 2px 8px -2px rgba(10, 10, 10, 0.20);
+}
+
+.tutor .column .title {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 4rem;
+	margin: 0 0 1.5em;
+	padding: 7px 10px;
+	color: #fff;
+	font-size: 0.95rem;
+	line-height: 1.4;
+	font-weight: bold;
+	text-align: center;
+	background: #0060B5;
+	border-radius: 8px;
+}
+
+.tutor .column .title:before {
+	content: "";
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	margin-left: -7px;
+	border: 7px solid transparent;
+	border-top: 7px solid #0060B5;
+}
+
+.tutor .column .title p {
+	margin: 0;
+	padding: 0;
+}
+
+.tutor .column .photo {
+	display: block;
+	border-radius: 50%;
+	width: 100px;
+	height: 100px;
+	margin: 0 auto 10px;
+}
+
+.tutor .column .university {
+	display: block;
+	width: 100%;
+	text-align: center;
+	font-size: 0.85rem;
+	font-weight: bold;
+	line-height: 1.5;
+}
+
+.tutor .column .name {
+	display: block;
+	width: 100%;
+	text-align: center;
+	font-size: 1.15rem;
+	color: #0060B5;
+	font-weight: bold;
+	margin-bottom: 0.5rem;
+}
+
+.tutor .column .card {
+	display: block;
+	width: 96%;
+	height: auto;
+	margin: 0 auto 0.5rem;
+}
+
+.tutor .column .text {
+	display: block;
+	width: 96%;
+	height: auto;
+	margin: 0 auto;
+	font-size: 0.83rem;
+}
+
+
+
+
+
+
+/*--------------------- 授業スタートまでの流れ ------------------------------*/
+.flow {
+	width: 100%;
+	/*margin-bottom: 3.5rem;*/
+	padding: 3rem 0;
+	background-color: #DBEFFC;
+}
+
+.flow .inner {
+	width: 90%;
+	margin: 0 auto;
+}
+
+.flow .column {
+	position: relative;
+	margin-bottom: 17px;
+	padding: 1.1rem 1rem;
+	background-color: #fff;
+	border-radius: 8px;
+}
+
+/*.flow .column::before {
+	content: '';
+	position: absolute;
+	display: block;
+	width: 0;
+	height: 0;
+	left: 40px;
+	bottom: -10px;
+	border-top: 10px solid #fff;
+	border-right: 10px solid transparent;
+	border-left: 10px solid transparent;
+}*/
+
+.flow .column .upper {
+	display: flex;
+	width: 100%;
+	margin-bottom: 0.6rem;
+	font-size: 1.1rem;
+	font-weight: bold;
+}
+
+.flow .column .upper .step {
+	width: 27%;
+	text-align: center;
+	color: #0060B5;
+}
+
+.flow .column .upper .title {
+	width: 73%;
+	color: #FF7B21;
+}
+
+.flow .column .under {
+	display: flex;
+	align-items: center;
+	width: 100%;
+}
+
+.flow .column .under .icon {
+	width: 27%;
+}
+
+.flow .column .under .icon>img {
+	display: block;
+	width: 80%;
+	margin: 0 auto;
+}
+
+.flow .column .under .text {
+	width: 72%;
+}
+
+.flow .start-column {
+	display: flex;
+	width: 100%;
+	padding: 2.5rem 1rem;
+	background-color: #0060B5;
+	border-radius: 8px;
+	font-size: 1.1rem;
+	color: #fff;
+	font-weight: bold;
+}
+
+.flow .start-column .step {
+	width: 27%;
+	text-align: center;
+}
+
+.flow .start-column .title {
+	width: 73%;
+}
+
+/*--------------------- よくある質問 ------------------------------*/
+.faq {
+	width: 90%;
+	margin: 0 auto 4rem;
+}
+
+.faq dt,
+.faq dd {
+	position: relative;
+	padding-left: 2em;
+	font-size: 1rem;
+}
+
+.faq dt::before,
+.faq dd::before {
+	position: absolute;
+	left: 0;
+	content: "";
+	display: inline-block;
+	height: 1.7em;
+	width: 1.7em;
+	vertical-align: middle;
+	margin-right: 0.2rem;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: left -1.7em top 0;
+}
+
+.faq dt {
+	font-weight: bold;
+	margin-bottom: 0.2rem;
+}
+
+.faq dd {
+	margin-bottom: 2.4rem;
+}
+
+.faq dt::before {
+	background: url("../images/faq_icon_q.svg");
+}
+
+.faq dd::before {
+	background: url("../images/faq_icon_a.svg");
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* FAQ base */
+.faq {
+  max-width: 860px;
+  margin: 0 auto;
+}
+
+/* each item */
+.faq-item {
+  border-bottom: 1px solid #e6e6e6;
+  padding: .25rem 0;
+}
+
+/* Question line */
+.faq-item > summary {
+  list-style: none;           /* 既定の三角を消す（Safari対策は下で） */
+  cursor: pointer;
+  padding: 1rem 2.25rem 1rem 0;
+  font-weight: 600;
+  position: relative;
+  outline: none;
+}
+
+/* 右側のアイコン（→／↓） */
+.faq-item > summary::after {
+  content: "＋";
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  font-weight: 700;
+  transition: transform .2s ease;
+}
+
+/* 開いたときのアイコン */
+.faq-item[open] > summary::after {
+  content: "－";
+}
+
+/* Answer area */
+.faq-item .answer {
+  padding: 0 0 1rem 0;
+  color: #444;
+  line-height: 1.9;
+}
+
+/* keyboard focus 視認性 */
+.faq-item > summary:focus-visible {
+  box-shadow: 0 0 0 3px rgba(0,140,255,.25);
+  border-radius: 6px;
+}
+
+/* Safari のデフォルトマーカーを確実に非表示 */
+.faq-item > summary::-webkit-details-marker {
+  display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*--------------------- フォーム ------------------------------*/
+.form {
+	width: 100%;
+	padding: 2.1rem 0;
+	background-color: #DBEFFC;
+}
+
+.form .inner {
+	width: 90%;
+	margin: 0 auto;
+}
+
+.form .text {
+	width: 100%;
+	margin-bottom: 1.8rem;
+	font-size: 1rem;
+	text-align: center;
+}
+
+.form input[type="text"],
+.form textarea,
+.form select {
+	height: 3.5rem;
+	width: 100%;
+	font-size: 16px;
+	padding: 0.3em;
+	color: #333;
+	background-color: #FFFFFF;
+	border-radius: 0.3em;
+	margin-top: 0.2em;
+	border: solid 1px #ACBEBF;
+}
+
+.form textarea {
+	height: 12em;
+	margin: 0.2em 0 1.2em;
+}
+
+.form select {
+	width: auto;
+	padding: 0.3em 1em;
+}
+
+.form .label-box {
+	display: flex;
+	align-items: center;
+	width: 100%;
+	margin: 2em 0 0.2rem;
+}
+
+.form .require {
+	/*	border-radius: 5px;*/
+	padding: 3px 9px;
+	background-color: #F00;
+	font-size: 0.8rem;
+	font-weight: normal;
+	color: #fff;
+	/*line-height: 2.4;*/
+}
+
+.form label {
+	margin-right: 0.4em;
+	padding-left: 10px;
+	border-left: 5px solid #27BDD6;
+	font-weight: bold;
+	font-size: 1.2rem;
+}
+
+::placeholder {
+	color: #aaa;
+}
+
+/* 旧Edge対応 */
+::-ms-input-placeholder {
+	color: #aaa;
+}
+
+/* IE対応 */
+:-ms-input-placeholder {
+	color: #aaa;
+}
+
+.form .privacy-text {
+	font-size: 0.9rem;
+	text-align: center;
+	margin-bottom: 1.5rem;
+}
+
+.form .btn {
+	display: block;
+	width: 80%;
+	margin: 0 auto;
+	background: #0060B5;
+	font-size: 1.2rem;
+	font-weight: bold;
+	color: #fff;
+	border-radius: 2rem;
+	padding: 0.8em;
+}
+
+.form label.error {
+	margin-right: 0;
+	padding-left: 0;
+	border-left: none;
+}
+
+#form .error {
+	font-size: 1rem;
+	font-weight: bold;
+	color: #f00;
+}
+
+#form input[type="text"].error,
+#form select.error {
+	border: 3px solid #f00;
+	background: #FFF0F0;
+	color: #333;
+	font-weight: normal;
+	font-size: 16px;
+	/*color: #f00;
+	font-weight: bold;
+	font-size: 1rem;*/
+}
+
+.return-top-btn {
+	display: block;
+	width: 80%;
+	text-align: center;
+	margin: 0 auto;
+	background: #0060B5;
+	font-size: 1.2rem;
+	font-weight: bold;
+	color: #fff;
+	border-radius: 2rem;
+	padding: 0.8em;
+}
+
+#form input[type="submit"],
+#form input[type="button"] {
+	text-align: center;
+	width: 100%;
+	font-size: 1rem;
+	border-radius: 2.5rem;
+	padding: 1.5rem 0;
+}
+
+#form input[type="submit"]:hover,
+#form input[type="button"]:hover {
+	opacity: 0.8;
+}
+
+#form input[type="submit"].col1,
+#form input[type="button"].col1 {
+	width: 80%;
+	margin: 0 auto;
+}
+
+#form .btn-box {
+	width: 90%;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+}
+
+#form input[type="submit"].col2,
+#form input[type="button"].col2 {
+	width: 49%;
+}
+
+#form .col2-space {
+	margin-right: 6px;
+}
+
+#form input[type="submit"].go,
+#form input[type="button"].go {
+	background-color: #0060B5;
+	border: 1px solid #0060B5;
+	color: #fff;
+}
+
+#form input[type="submit"].back,
+#form input[type="button"].back {
+	background-color: #eee;
+	color: #555;
+	border: 1px solid #aaa;
+}
+
+#formWrap {
+	width: 90%;
+	margin: 1.5rem auto;
+}
+
+#form table.formTable {
+	width: 94%;
+	margin: 15px auto 10px;
+	font-size: 0.9rem;
+}
+
+#form table.formTable th,
+#form table.formTable td {
+	display: block;
+	width: 100%;
+	padding: 0.5rem;
+}
+
+#form table.formTable th {
+	background-color: #DEF7FC;
+	font-weight: bold;
+	margin-bottom: 0;
+}
+
+#form table.formTable td {
+	background-color: #EBFAFF;
+	margin-bottom: 0;
+}
+
+#formWrap h4 {
+	color: #f00;
+	margin-bottom: 15px;
+}
+
+#formWrap .error_messe {
+	margin-bottom: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+#form .cv-section-btn-box{
+	display: flex;
+	justify-content: space-between;
+	width: 90%;
+	max-width: 700px;
+	margin: 0 auto 1.5rem;
+}
+#form .cv-section-btn-box a{
+	display: block;
+	width: 48%;
+	padding: 1rem 0.5rem;
+	font-size: 1.2rem;
+	font-weight: bold;
+	text-align: center;
+	color: #fff;
+	line-height: 1.3;
+	border-radius: 9999px;
+}
+#form .cv-section-btn-box a.cv-line{
+	background-color: #20B831;
+}
+#form .cv-section-btn-box a.cv-form{
+	background-color: #0060B5;
+}
+
+#form .form-section-text{
+	margin-bottom: 1rem;
+	padding: 0.6em 0.5em;
+	font-size: 1.4rem;
+	font-weight: bold;
+	color: #fff;
+	text-align: center;
+	line-height: 1.5;
+	background-color: #0060B5;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*--------------------- フッター ------------------------------*/
+.footer {
+	width: 100%;
+	padding: 1.5rem 0.5rem 0.9rem;
+	border-top: 1px solid #A4BFC1;
+	margin-bottom: 110px;
+}
+
+.footer .logo-box {
+	width: 100%;
+	text-align: center;
+}
+
+.footer .logo-box .logo {
+	width: 170px;
+	height: auto;
+	margin-bottom: 1.6rem;
+}
+
+.footer .subpage-box {
+	display: flex;
+	flex-direction: column;
+	width: 90%;
+	margin: 0 auto;
+	font-size: 0.9rem;
+}
+
+.footer .subpage-box a {
+	position: relative;
+	display: inline-block;
+	margin-bottom: 1.2rem;
+	padding-left: 10px;
+	line-height: 1;
+}
+
+.footer .subpage-box a::before {
+	position: absolute;
+	left: 0;
+	top: 2px;
+	content: "";
+	display: inline-block;
+	height: 12px;
+	width: 6px;
+	vertical-align: middle;
+	margin-right: 0.2rem;
+	background-size: contain;
+	background-position: left -2em top 0;
+	background: url("../images/footer_arrow.svg");
+	background-repeat: no-repeat;
+}
+
+.footer .copy {
+	display: block;
+	width: 90%;
+	margin: 0 auto;
+	font-size: 0.8rem;
+}
+
+/*--------------------- 会社概要・プライバシーポリシー ------------------------------*/
+.content.subpage {
+	padding: 1.6rem 0 3rem;
+}
+
+h2.subpage {
+	font-size: 1.5rem;
+	margin-bottom: 0.3rem;
+	font-weight: bold;
+}
+
+.privacy .desc {
+	width: 100%;
+	font-size: 0.9rem;
+	margin-bottom: 1rem;
+}
+
+.privacy {
+	font-size: 0.9rem;
+}
+
+.privacy h3.redline {
+	font-size: 1rem;
+	font-weight: bold;
+	padding: 0.7rem 0.8rem;
+	background-color: #0060B5;
+	color: #fff;
+	margin: 1.3rem 0 0.3rem;
+}
+
+.privacy ul {
+	margin-left: 1.5rem;
+	list-style: disc;
+}
+
+.privacy h4 {
+	font-size: 1rem;
+	font-weight: bold;
+	margin-top: 1rem;
+}
+
+.thanks-text {
+	width: 100%;
+	margin: 2rem auto 3rem;
+	font-size: 1rem;
+	text-align: center;
+}
+
+table.style01 {
+	width: 100%;
+	/*word-break:break-all;*/
+}
+
+table.style01,
+table.style01 th,
+table.style01 td {
+	border: 1px solid #0060B5;
+	border-collapse: collapse;
+}
+
+table.style01 tbody {
+	width: 100%;
+}
+
+table.style01 th {
+	display: block;
+	width: 100%;
+	background: #0060B5;
+	font-weight: bold;
+	color: #fff;
+	text-align: center;
+	margin-top: -1px;
+	padding: 0.6rem;
+}
+
+table.style01 td {
+	display: block;
+	width: 100%;
+	padding: 1rem;
+	font-size: 0.9rem;
+	border-bottom: none;
+}
+
+table.style01 td:last-child {
+	border: 1px solid #0060B5;
+}
+
+
+/*----------------------------------------------------
+LINE友達追加エリア
+----------------------------------------------------*/
+
+#line-wrap {
+	padding: 2rem 0;
+	background-color: #DBEFFC;
+}
+
+#line-wrap .text {
+	margin-bottom: 1rem;
+	text-align: center;
+
+}
+
+.line-box {
+	width: 90%;
+	margin: 0 auto;
+	padding: 1.5rem 0;
+	background-color: #fff;
+	border-radius: 8px;
+}
+
+.line-box .line-ttile {
+	margin-bottom: 1rem;
+	padding: 0.6em 0.5em;
+	font-size: 1.4rem;
+	font-weight: bold;
+	color: #fff;
+	text-align: center;
+	line-height: 1.5;
+	background-color: #20B831;
+}
+
+.line-box .line-text {
+	width: 94%;
+	padding-top: 1rem;
+	margin: 0 auto;
+	font-size: 0.9rem;
+	text-align: center;
+}
+
+.line-box .inner-box {
+	width: 80%;
+	margin: 0 auto;
+	padding: 1.5rem 2rem 2rem;
+	text-align: center;
+	background-color: #EAFCED;
+}
+
+.line-box .join-title {
+	/*margin-bottom: 0.5rem;*/
+	font-size: 1.4rem;
+	font-weight: bold;
+	color: #20B831;
+}
+
+.line-box .box-qr {
+	width: 80%;
+	margin: 0 auto 1rem;
+}
+
+.line-box .box-qr img {
+	width: 120px;
+	height: 120px;
+}
+
+
+/*----------------------------------------------------
+感想文スクロール
+----------------------------------------------------*/
+.impressions-box {
+	margin-bottom: 5rem;
+}
+
+.impressions-box .impressions-title {
+	margin: 1rem;
+	font-size: 1.7rem;
+	font-weight: bold;
+	text-align: center;
+	color: #e91400;
+}
+
+.impressions-box .impressions-text {
+	width: 94%;
+	margin: 0 auto 1rem;
+	font-size: 1.3rem;
+	font-weight: bold;
+	text-align: center;
+}
+
+.impressions-box .impressions-text .marker {
+	background: linear-gradient(transparent 50%, #ffdd00 80%);
+
+}
+
+.impressions-box .impressions-text .red {
+	color: #e91400;
+}
+
+.impressions-box .impressions-slider {
+	display: flex;
+	max-width: 2000px;
+	margin: 0 auto 3rem;
+}
+
+.impressions-box .impressions-slider li {
+	width: 100%;
+	max-width: 400px;
+	height: auto;
+	padding: 0 20px 0 20px;
+	text-align: center;
+}
+
+.impressions-box .impressions-slider li img {
+	width: 90%;
+	height: auto;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.impressions-box .slick-prev {
+	z-index: 10;
+	left: 0;
+}
+
+.impressions-box .slick-next {
+	z-index: 10;
+	right: 0;
+}
+
+/*----------------------------------------------------
+特長の動画部分
+----------------------------------------------------*/
+.forte-movie {
+	width: 100%;
+	/*	max-width: 1200px;*/
+	margin: 0 auto 4rem;
+}
+
+.forte-movie .movie-title {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 90%;
+	max-width: 800px;
+	height: 2.3em;
+	margin: 0 auto 16px;
+	font-size: 1.5rem;
+	font-weight: bold;
+	color: #fff;
+	letter-spacing: 0.1em;
+	background-color: #0766AB;
+}
+
+.forte-movie .inner {
+	width: 90%;
+	max-width: 800px;
+	margin: 0 auto;
+}
+
+.forte-youtube {
+	position: relative;
+	width: 100%;
+	margin: 0 auto 0.5rem;
+	padding-top: 56.25%;
+}
+
+.forte-youtube iframe {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+}
+
+
+
+
+
+/*----------------------------------------------------
+iOSでのデフォルトスタイルをリセット
+----------------------------------------------------*/
+input[type="submit"],
+input[type="button"] {
+	-webkit-box-sizing: content-box;
+	-webkit-appearance: button;
+	appearance: button;
+	border: none;
+	box-sizing: border-box;
+	cursor: pointer;
+}
+
+input[type="submit"]::-webkit-search-decoration,
+input[type="button"]::-webkit-search-decoration {
+	display: none;
+}
+
+input[type="submit"]::focus,
+input[type="button"]::focus {
+	outline-offset: -2px;
+}
+
+/*----画面サイズが小さいスマホ用CSS----------------------------------------------------------------------------------------------------------------------------------*/
+@media screen and (max-width:360px) {
+	html {
+		font-size: 12px;
+	}
+
+	#footer__cv-area .column__tel-text::before {
+		margin-right: 0;
+	}
+
+	#footer__cv-area .column__tel-text .time {
+		font-size: 0.7rem;
+	}
+}
+
+/*画面サイズが小さいスマホ用CSS閉じタグ*/
+/*----タブレット用CSS-------------------------------------------------------------------------------------------------------------------------------------------------*/
+@media screen and (min-width: 481px) and (max-width: 896px) {
+	html {
+		font-size: 17px;
+	}
+
+	.pc-none {
+		display: none;
+	}
+
+	.pc-block {
+		display: block;
+	}
+
+	.sp-none {
+		display: block;
+	}
+
+	.tb-none {
+		display: none;
+	}
+
+	br.sp-only {
+		display: none;
+	}
+
+	/*--------------------- ヘッダー ----------------------------*/
+	.header {
+		margin: 0 auto;
+		padding: 0.6rem 0.8rem;
+	}
+
+	.header .logo {
+		width: 200px;
+	}
+
+	/*--------------------- アイキャッチ --------------------------*/
+	.eyecatch_d01-box .sp-box {
+		width: 100%;
+		background-image: url("../images/d01-2_eye_pc_bg.jpg");
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: top 0 left 55%;
+	}
+
+	.eyecatch_d01-box .sp-box img {
+		display: block;
+		width: 70%;
+		height: auto;
+		margin: 0 auto 0 5%;
+	}
+
+	/*アイキャッチ成績保証版*/
+	.eyecatch_guarantee-box {
+		width: 100%;
+		background-image: none;
+		background: linear-gradient(90deg, #fff 0%, #fff 50%, #F9FCFB 50%, #F9FCFB 100%);
+	}
+
+	.eyecatch_guarantee-box img.sp {
+		display: none;
+	}
+
+	.eyecatch_guarantee-box .pc-box {
+		display: block;
+		width: 100%;
+		margin: 0 auto;
+		text-align: center;
+		background-image: url("../images/guarantee_eye_pc_bg.jpg");
+		background-position: top center;
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+
+	.eyecatch_guarantee-box .pc-box img {
+		width: 90%;
+		height: auto;
+	}
+
+	/*アイキャッチ2024年ABテスト用*/
+	.eyecatch_ab2024-box {
+		margin-bottom: 2rem;
+	}
+
+	.eyecatch_ab2024-box.ab2024-a{
+		background-image: url("../images/ab2024_eye-catch_a_pc.jpg");
+	}
+
+	.eyecatch_ab2024-box.ab2024-b{
+		background-image: url("../images/ab2024_eye-catch_b_pc.jpg");
+	}
+	
+	.eyecatch_ab2024-box.ab2025-c{
+		background-image: url("../images/ab2025-05_eye-catch_c_pc.jpg");
+	}
+
+	.eyecatch_ab2024-box.ab2025-d{
+		background-image: url("../images/ab2025-05_eye-catch_d_pc.jpg");
+	}
+
+	
+	
+	/*--------------------- 成績保証コンテンツ --------------------------*/
+	#guarantee {
+		width: 75%;
+		;
+		margin: 0 auto 5rem;
+	}
+
+	#guarantee .not-img-sp {
+		display: none;
+	}
+
+	#guarantee .not-img-pc {
+		display: block;
+		width: 100%;
+		max-width: 800px;
+		margin: 0 auto;
+	}
+
+
+
+	/*--------------------- コーチング --------------------------*/
+	.coaching-img_sp {
+		width: 80%;
+		margin: 0 auto 3rem;
+	}
+
+	.dz-tutors-img {
+		width: 70%;
+	}
+
+	/*--------------------- キャンペーン --------------------------*/
+	.campaign-sp {
+		display: none;
+	}
+
+	.campaign-pc {
+		display: block;
+		width: 70%;
+		height: auto;
+		margin: 0 auto 4rem;
+		/* box-shadow: 0px 1px 3px 3px rgba(0, 0, 0, 0.1);*/
+	}
+
+	.campaign-pc.cv {
+		margin-bottom: 0.8rem;
+	}
+
+	/*--------------------- CTA --------------------------*/
+	.cta_sp {
+		width: 70%;
+/*		margin: 0 auto;*/
+	}
+
+	.cta_sp.lp-d01_eye {
+		width: 80%;
+		margin: 13px auto 0;
+		padding: 1.5rem;
+	}
+
+	.cta_sp .btn {
+		height: 80px;
+		border-radius: 40px;
+	}
+
+	/*
+  .cta_sp .btn.form {
+    background-position: left 25px center, right 20px center;
+    background-size: auto 1.2em, 1.2em auto;
+  }
+	*/
+	.cta_sp .btn.form {
+		background-position: left 45px center, right 30px center;
+		background-size: 45px auto, 15px auto;
+	}
+
+	.cta_sp .btn.tel {
+		background-position: left 45px center;
+		background-size: 50px auto;
+	}
+
+
+
+
+	/*--------------------- footerのCTA ------------------------------------*/
+	#footer__cv-area .column__tel-text::before {
+		width: 40px;
+		height: 36px;
+	}
+
+	/*--------------------- h2と背景など共通の部品 ------------------------------------*/
+	.content {
+		width: 80%;
+	}
+
+	.bg-dot {
+		background-image: url("../images/bg_blue_pc.png");
+		background-position: top -25px center;
+		background-size: 135% auto;
+	}
+
+	/*--------------------- 新 ダイレクトゼミの4つの特長 --------------------------*/
+	#forte .inner .title {
+		font-size: 2.2rem;
+		color: #E91400;
+	}
+
+	#forte .inner .title br {
+		display: none;
+	}
+
+	#forte .inner .title span {
+		font-size: 1em;
+	}
+
+	#forte .inner .forte-box {
+		width: 75%;
+	}
+
+	#forte .inner .forte-box .column .image {
+		width: 68%;
+		margin: 0 12% 1rem 20%;
+	}
+
+	#forte .inner .forte-box .column .text {
+		font-size: 1.1rem;
+	}
+
+	/*--------------------- 他社オンライン家庭教師と比較 --------------------------*/
+	#comparison .inner {
+		width: 80%;
+		margin: 0 auto;
+	}
+
+	#comparison .inner .title {
+		font-size: 1.9rem;
+	}
+
+	#comparison .inner .comparison_table_sp {
+		display: none;
+	}
+
+	#comparison .inner .comparison_table_pc {
+		display: block;
+		margin: 0 auto;
+		width: 100%;
+		height: auto;
+	}
+
+	/*--------------------- 指導方針 --------------------------*/
+	#guidance .inner {
+		width: 80%;
+	}
+
+	#guidance .inner .title {
+		font-size: 2rem;
+	}
+
+
+	/*--------------------- 悩み --------------------------*/
+	.worry {
+		background-size: auto 180px, 35px 35px;
+		background-position: right 10% bottom 25px, 0 0;
+	}
+
+	.worry .inner {
+		width: 80%;
+		margin: 0 auto;
+	}
+
+	.worry-answer .inner {
+		width: 80%;
+		padding: 2rem;
+	}
+
+	.worry-answer .inner .icon img {
+		width: 50px;
+		height: auto;
+	}
+
+	/*--------------------- ダイレクトゼミの特徴 --------------------------*/
+	.merit .inner {
+		width: 80%;
+		margin: 0 auto;
+	}
+
+	.merit .inner .icon {
+		width: 125px;
+	}
+
+	.merit .inner .box .image {
+		display: block;
+		width: 300px;
+		height: auto;
+		margin: 0 auto 1.4rem;
+	}
+
+	.merit .inner .box .movie-box {
+		width: 100%;
+	}
+
+	.merit .inner .box .movie-box div {
+		width: 24%;
+		margin-bottom: 0;
+	}
+
+	/*--------------------- コース・料金 --------------------------*/
+	.course {
+		/*	width: 80%;*/
+		width: 100%;
+		margin: 0 auto 5rem;
+	}
+
+	.course .desc {
+		width: 80%;
+		margin: 0 auto 1rem;
+	}
+
+	.tab_container .tab_content {
+		width: 100%;
+	}
+
+	.tab_container .tab_content .price-table_sp {
+		display: none;
+	}
+
+	.tab_container .tab_content .price-table_pc {
+		display: block;
+		width: 90%;
+		max-width: 800px;
+		height: auto;
+		margin: 1rem auto 1.2rem;
+	}
+
+	.tab_container .exp {
+		display: none;
+	}
+
+	.course .price_sp {
+		display: none;
+	}
+
+	.course .price_pc {
+		display: block;
+		width: 60%;
+		height: auto;
+		margin: 0 auto 2rem;
+	}
+
+	.course .exp-box {
+		padding: 2rem 0 2.5rem;
+	}
+
+	.course .exp-box h3 {
+		display: block;
+		margin-bottom: 1rem;
+		font-size: 1.3rem;
+		color: #0060B5;
+		font-weight: bold;
+	}
+
+	.course .exp-box .img_sp {
+		display: none;
+	}
+
+	.course .exp-box .img_pc {
+		display: block;
+		width: 80%;
+		margin: 0 auto;
+	}
+
+	/*--------------------- 生徒・保護者様の声 ------------------------------*/
+	.voice {
+		width: 80%;
+		margin: 0 auto 3rem;
+	}
+
+	.voice .column .profile .image {
+		width: 20%;
+		height: auto;
+	}
+
+	.voice .column .profile .info {
+		width: 79%;
+		line-height: 1.3;
+	}
+
+	.voice-pac .box {
+		width: 100%;
+		padding: 2.5rem 3rem 1.5rem;
+		border: 2px solid #27BDD6;
+	}
+
+	/*--------------------- 生徒・保護者様の声 動画部分 ------------------------------*/
+	.movie-box .inner {
+		width: 80%;
+	}
+
+	/*--------------------- 講師紹介 ------------------------------*/
+	.tutor2_lead-text,
+	.tutor2_tutors-img,
+	.tutor2_start-step {
+		width: 85%;
+	}
+
+	.tutor2_start-step {
+		padding: 3rem 3rem;
+	}
+
+	.tutor .catch {
+		font-size: 1.4rem;
+	}
+
+	.tutor-feature-box {
+		width: 75%;
+		margin: 0 auto 1.6rem;
+	}
+
+	/*--------------------- 授業スタートまでの流れ ------------------------------*/
+	.flow .inner {
+		width: 80%;
+	}
+
+	/*--------------------- よくある質問 ------------------------------*/
+	.faq {
+		width: 80%;
+	}
+
+	/*--------------------- フッター ------------------------------*/
+	.footer {
+		display: flex;
+		flex-direction: row-reverse;
+		justify-content: space-between;
+		align-items: center;
+		padding: 1.5rem 1rem 0.9rem;
+	}
+
+	.footer .logo-box {
+		width: 170px;
+		text-align: right;
+	}
+
+	.footer .logo-box .logo {
+		width: 170px;
+		height: auto;
+		margin-bottom: 1.6rem;
+	}
+
+	.footer .subpage-box {
+		flex-direction: row;
+		width: auto;
+		margin: 0;
+		font-size: 0.9rem;
+	}
+
+	.footer .subpage-box a {
+		position: relative;
+		display: inline-block;
+		margin-bottom: 1.2rem;
+		margin-right: 2rem;
+		padding-left: 10px;
+		line-height: 1;
+	}
+
+	.footer .copy {
+		width: 100%;
+		font-size: 0.8rem;
+	}
+
+	/*--------------------- フォーム ------------------------------*/
+	.form .inner {
+		width: 80%;
+		margin: 0 auto;
+	}
+
+	.return-top-btn {
+		width: 400px;
+	}
+
+	#formWrap {
+		width: 80%;
+		margin: 2.5rem auto;
+	}
+
+	
+	
+	
+	#form .cv-section-btn-box{
+		width: 80%;
+	}
+	.form .inner {
+		width: 80%;
+		margin: 0 auto;
+	}
+	.return-top-btn {
+		width: 400px;
+	}
+	#formWrap {
+		width: 80%;
+		margin: 2.5rem auto;
+	}	
+	
+	
+	
+	/*----------------------------------------------------
+LINE友達追加エリア
+----------------------------------------------------*/
+	.line-box {
+		width: 70%;
+		padding: 1.5rem 0;
+	}
+
+	.line-box .line-ttile {
+		padding: 0.6em 0.5em;
+		font-size: 1.2rem;
+	}
+
+	.line-box .line-text {
+		width: 90%;
+		/*	font-size: 1.1rem;*/
+	}
+
+
+
+
+
+
+
+
+
+}
+
+/*タブレット用CSS閉じタグ*/
+/*----PC用CSS-----------------------------------------------------------------------------------------------------------------------------------------------------*/
+@media screen and (min-width:897px) {
+	html {
+		font-size: 19px;
+	}
+
+	img {
+		/*max-width: initial;*/
+		width: auto;
+		height: auto;
+	}
+
+	.pc-none {
+		display: none;
+	}
+
+	.pc-block {
+		display: block;
+	}
+
+	.sp-none {
+		display: block;
+	}
+
+	.hover-op08:hover {
+		opacity: 0.8;
+	}
+	br.sp-only {
+		display: none;
+	}
+
+
+	/*--------------------- アイキャッチ --------------------------*/
+
+	.eyecatch_d01-box .target {
+		font-size: 1.1rem;
+	}
+
+	.eyecatch_d01-box .sp-box {
+		display: none;
+	}
+
+	.eyecatch_d01-box .pc-box {
+		display: block;
+		width: 100%;
+		height: auto;
+		margin-bottom: 1.5rem;
+		padding: 0;
+		background-color: #FAFAFA;
+		background-image: url("../images/d01-2_eye_pc_bg.jpg");
+		background-size: 1400px auto;
+		background-position: top center;
+		background-repeat: no-repeat;
+	}
+
+	.eyecatch_d01-box .pc-box img {
+		display: block;
+		margin: 0 auto;
+	}
+
+	/*アイキャッチ成績保証版*/
+	.eyecatch_guarantee-box {
+		width: 100%;
+		background-image: none;
+		background: linear-gradient(90deg, #fff 0%, #fff 50%, #F9FCFB 50%, #F9FCFB 100%);
+	}
+
+	.eyecatch_guarantee-box img.sp {
+		display: none;
+	}
+
+	.eyecatch_guarantee-box .pc-box {
+		display: block;
+		width: 1200px;
+		margin: 0 auto;
+		text-align: center;
+		background-image: url("../images/guarantee_eye_pc_bg.jpg");
+		background-position: top center;
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+
+	
+	/*アイキャッチ2024年ABテスト用*/
+	.eyecatch_ab2024-box {
+		margin-bottom: 2rem;
+	}
+	.eyecatch_ab2024-box.ab2024-a{
+		background-image: url("../images/ab2024_eye-catch_a_pc.jpg");
+	}
+
+	.eyecatch_ab2024-box.ab2024-b{
+		background-image: url("../images/ab2024_eye-catch_b_pc.jpg");
+	}
+	
+	.eyecatch_ab2024-box.ab2025-c{
+		background-image: url("../images/ab2025-05_eye-catch_c_pc.jpg");
+	}
+
+	.eyecatch_ab2024-box.ab2025-d{
+		background-image: url("../images/ab2025-05_eye-catch_d_pc.jpg");
+	}
+
+	/*--------------------- 成績保証コンテンツ --------------------------*/
+	#guarantee {
+		width: 1000px;
+		margin: 0 auto 4rem;
+	}
+
+	#guarantee h2 {
+		font-size: 1.9rem;
+	}
+
+	#guarantee h2 .large {
+		font-size: 1.4em;
+	}
+
+	#guarantee .sp-only {
+		display: none;
+	}
+
+	#guarantee .target {
+		margin-bottom: 0.5rem;
+		font-size: 1.2rem;
+	}
+
+	#guarantee h3 {
+		width: 750px;
+		margin: 0 auto 0.6rem;
+		padding: 0.3em;
+		font-size: 1.3rem;
+	}
+
+	#guarantee .guarantee-img {
+		display: block;
+		width: 700px;
+		margin: 0 auto 2rem;
+	}
+
+	#guarantee .arrow {
+		margin: 0 auto 1rem;
+		border-width: 20px 28px 0 28px;
+
+	}
+
+	#guarantee .not-text {
+		font-size: 1.75rem;
+	}
+
+	#guarantee .not-text .large {
+		font-size: 1.2em;
+	}
+
+	#guarantee .not-img-sp {
+		display: none;
+	}
+
+	#guarantee .not-img-pc {
+		display: block;
+		width: 800px;
+		margin: 0 auto;
+	}
+
+
+
+
+
+
+	/*--------------------- コーチング --------------------------*/
+	.coaching-img_sp {
+		display: none;
+	}
+
+	.coaching-img_pc {
+		display: block;
+		width: auto;
+		height: auto;
+		margin: 0 auto 3rem;
+	}
+
+	.dz-tutors-img {
+		flex-wrap: nowrap;
+		width: 1200px;
+		margin: 0 auto 4rem;
+	}
+
+	.dz-tutors-img img {
+		width: 12%;
+		margin-bottom: 0;
+	}
+
+	/*--------------------- キャンペーン --------------------------*/
+	.campaign-sp {
+		display: none;
+	}
+
+	.campaign-pc {
+		display: block;
+		width: 760px;
+		height: auto;
+		margin: 0 auto 3rem;
+		/*  box-shadow: 0px 1px 3px 3px rgba(0, 0, 0, 0.1);*/
+	}
+
+	/*--------------------- CTA --------------------------*/
+	.cta_sp {
+		display: none;
+	}
+
+	.cta_pc {
+		display: block;
+		width: 1000px;
+		margin: 0 auto 5rem;
+		padding: 2rem 2rem 1.5rem;
+		border: 2px solid #0060B5;
+		background-color: #fff;
+	}
+
+	.cta_pc .title {
+		width: 100%;
+		margin-bottom: 1.7rem;
+		font-size: 1.3rem;
+		font-weight: bold;
+		text-align: center;
+		color: #0060B5;
+		text-shadow: 0 0 5px #fff;
+		padding: 0.3em 0.5em;
+		background: -webkit-repeating-linear-gradient(-45deg, #DFF6FA, #DFF6FA 3px, #fff 3px, #fff 7px);
+		background: repeating-linear-gradient(-45deg, #DFF6FA, #DFF6FA 3px, #fff 3px, #fff 7px);
+	}
+
+	.cta_pc .title .large-text {
+		font-size: 1.3em;
+	}
+
+	.cta_pc .inner {
+		display: flex;
+		justify-content: center;
+		width: 100%;
+	}
+
+	.cta_pc .inner .column {
+		/*width: 49%;*/
+		width: 70%;
+		text-align: center;
+	}
+
+	.cta_pc .upper-text {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-bottom: 0.2rem;
+		font-size: 1.25rem;
+		text-align: center;
+		font-weight: bold;
+		color: #0072C8;
+	}
+
+	.cta_pc .inner .column.line-btn .upper-text {
+		color: #15BA55;
+	}
+
+	.cta_pc .upper-text::before,
+	.cta_pc .upper-text::after {
+		content: '';
+		width: 2px;
+		height: 22px;
+		background-color: #0072C8;
+	}
+
+	.cta_pc .column.line-btn .upper-text::before,
+	.cta_pc .column.line-btn .upper-text::after {
+		background-color: #15BA55;
+	}
+
+	.cta_pc .upper-text::before {
+		margin-right: 10px;
+		transform: rotate(-35deg)
+	}
+
+	.cta_pc .upper-text::after {
+		margin-left: 10px;
+		transform: rotate(35deg)
+	}
+
+	/* ネイビーボタン
+  .cta_pc .form-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 90px;
+    padding: 0 0.9rem;
+    background-color: #0060B5;
+    font-size: 1.2rem;
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 45px;
+    margin-bottom: 0.8rem;
+    background-image: url("../images/cta_icon_form_white.svg"), url("../images/cta_icon_arrow.svg");
+    background-position: left 35px center, right 30px center;
+    background-size: auto 1.2em, 1.2em auto;
+    background-repeat: no-repeat;
+  }
+	*/
+	/*LINE入りボタン*/
+	.cta_pc .form-btn {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		height: 90px;
+		padding: 0 30px 0 80px;
+		background-color: #15BA55;
+		font-size: 1.2rem;
+		color: #fff;
+		text-align: center;
+		font-weight: bold;
+		border-radius: 45px;
+		margin-bottom: 0.8rem;
+		background-image: url("../images/icon_line.svg")
+			/*,url("../images/icon_mail_white.svg"), url("../images/icon_arrow_white.svg")*/;
+		background-position: left 28px center, left 80px center, right 30px center;
+		background-size: 44px auto, 25px auto, 17px auto;
+		background-repeat: no-repeat;
+	}
+
+	.cta_pc .form-btn:hover {
+		opacity: 0.8;
+	}
+
+	.cta_pc .tel-number {
+		position: relative;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-content: center;
+		width: 370px;
+		margin: 0 auto;
+		/*width: 100%;*/
+		padding: 0.5em 0.9em 0 2.1em;
+		font-size: 1.4rem;
+		color: #0060B5;
+		text-align: center;
+		font-weight: bold;
+		/*
+		background-image: url("../images/cta_icon_tel_blue.svg");
+		background-position: left 25px center;
+		background-size: auto 1.5em;
+		background-repeat: no-repeat;
+		*/
+	}
+
+	.cta_pc .tel-number::before {
+		position: absolute;
+		left: 0;
+		top: 0;
+		content: "";
+		display: inline-block;
+		height: 2.5em;
+		width: 2.1em;
+		vertical-align: middle;
+		margin-right: 0.5em;
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-position: left 0 top 0.6em;
+		background-image: url("../images/freeaccess_orange.svg");
+	}
+
+	.cta_pc .tel-number .number {
+		display: block;
+		width: 100%;
+		font-size: 1em;
+		line-height: 1.2;
+	}
+
+	.cta_pc .tel-number .time {
+		display: block;
+		width: 100%;
+		font-size: 0.63em;
+		font-weight: normal;
+	}
+
+	/*--------------------- footerのCTA ------------------------------------*/
+	#footer__cv-area .column__text {
+		font-size: 0.9rem;
+	}
+
+	#footer__cv-area .inner {
+		width: 800px;
+		margin: 0 auto;
+	}
+
+	#footer__cv-area .column__btn.document:hover {
+		opacity: 0.8;
+	}
+
+	#footer__cv-area .column__btn.document {
+		padding-right: 30px;
+		letter-spacing: 0.06em;
+	}
+
+	#footer__cv-area .column__tel-text .time .time-tel {
+		display: inline;
+	}
+
+	#footer__cv-area .column__tel-text .time {
+		font-size: 0.7rem;
+	}
+
+	#footer__cv-area .column__tel-text::before {
+		width: 40px;
+		height: 36px;
+	}
+
+	#footer__cv-area .column__document-text::before {
+		width: 75px;
+		height: 35px;
+		margin-right: 0;
+		background-image: url("../images/icon_line.svg");
+		background-size: 35px auto, 20px auto;
+		background-position: center left 0, center left 43px;
+	}
+
+	/*--------------------- h2と背景など共通の部品 ------------------------------------*/
+	.content {
+		width: 1000px;
+	}
+
+	.bg-dot {
+		background-image: url("../images/bg_blue_pc.png");
+		background-position: top -75px center;
+		background-size: 90% auto;
+	}
+
+	/*--------------------- 新 ダイレクトゼミの4つの特長 --------------------------*/
+	#forte {
+		margin-bottom: 5rem;
+		padding: 4.2rem 0 4rem;
+	}
+
+	#forte .inner .sub-title {
+		font-size: 1.4rem;
+	}
+
+	#forte .inner .title {
+		margin-bottom: 2.4rem;
+		font-size: 2.4rem;
+		color: #E91400;
+	}
+
+	#forte .inner .title br {
+		display: none;
+	}
+
+	#forte .inner .title span {
+		font-size: 1em;
+	}
+
+	#forte .inner .forte-box {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		width: 1000px;
+	}
+
+	#forte .inner .forte-box .column {
+		width: 47%;
+		margin-bottom: 2.4rem;
+	}
+
+	#forte .inner .forte-box .column .text {
+		width: 100%;
+		font-size: 1.2rem;
+	}
+
+	/*--------------------- 他社オンライン家庭教師と比較 --------------------------*/
+	#comparison {
+		margin-bottom: 5rem;
+	}
+
+	#comparison .inner {
+		width: 1000px;
+	}
+
+	#comparison .inner .title {
+		font-size: 2.4rem;
+	}
+
+	#comparison .inner .sub-title {
+		margin-bottom: 0.5rem;
+		font-size: 1.4rem;
+	}
+
+	#comparison .inner .sub-title br {
+		display: block;
+	}
+
+	#comparison .inner .comparison_table_sp {
+		display: none;
+	}
+
+	#comparison .inner .comparison_table_pc {
+		display: block;
+		margin: 0 auto;
+		width: 900px;
+		height: auto;
+	}
+
+	/*--------------------- 指導方針 --------------------------*/
+	#guidance .inner {
+		width: 1000px;
+	}
+
+	#guidance .inner .title {
+		font-size: 2.4rem;
+	}
+
+	#guidance .inner .sub-title {
+		margin-bottom: 0.2rem;
+		font-size: 1.4rem;
+	}
+
+	#guidance .inner .guidance_img_sp {
+		display: none;
+	}
+
+	#guidance .inner .guidance_img_pc {
+		display: block;
+		margin-bottom: 1rem;
+		width: 1000px;
+		height: auto;
+	}
+
+	#guidance .inner .result-text {
+		margin-bottom: 2.2rem;
+		font-size: 1.9rem;
+	}
+
+	/*--------------------- 悩み --------------------------*/
+	.worry {
+		background-image: url("../images/worry_bg.png");
+		background-size: 35px 35px;
+		background-repeat: repeat;
+		background-position: 0 0;
+	}
+
+	.worry .inner {
+		width: 600px;
+		margin: 0 auto;
+		background-image: url("../images/worry_girl.png");
+		background-size: auto 200px;
+		background-repeat: no-repeat;
+		background-position: right 5px bottom 0;
+	}
+
+	.worry .title {
+		font-size: 1.5rem;
+	}
+
+	.worry ul li {
+		font-size: 1.3rem;
+	}
+
+	.worry-answer {
+		width: 1000px;
+		margin: 0 auto 5rem;
+	}
+
+	.worry-answer .title {
+		font-size: 1.3rem;
+	}
+
+	.worry-answer .inner {
+		display: flex;
+		justify-content: space-between;
+		width: 800px;
+		padding: 2rem;
+	}
+
+	.worry-answer .inner .icon {
+		width: 7%;
+	}
+
+	.worry-answer .inner .icon img {
+		width: 70px;
+		height: auto;
+	}
+
+	.worry-answer .inner .text {
+		width: 90%;
+	}
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	/*---------------- オンライン家庭教師ドリームが解決します-------------*/
+	#solution{
+		padding: 5rem 0 0;
+	}
+	#solution::before{
+    border-top: 50px solid #fff;
+    border-right: 150px solid transparent;
+    border-left: 150px solid transparent;
+}
+	#solution .solution-title .solution{
+		font-size: 2.2rem;
+	}
+	#solution .solution-title .solution .dream{
+		display: inline;
+	}
+	
+	#solution .solution-title br.sp-only{
+		display: none;
+	}
+	
+	#solution .solutions-box .column{
+		display: flex;
+		justify-content: space-between;
+	}
+	#solution .solutions-box .column .text-box{
+		width: 60%;
+	}
+	#solution .solutions-box .text-box .title{
+		text-align: left;
+	}
+	#solution .solutions-box .text-box .title .balloon{
+		margin-bottom: 14px;
+	}
+	#solution .solutions-box .text-box .title .balloon::before{
+    left: 25px;
+    transform:none;
+}
+	#solution .solutions-box .text-box .title .large-text{
+		font-size: 1.5rem;
+		line-height: 1.3em;
+	}
+	
+	
+	
+	#solution .solutions-box .text-box .text p{
+		font-size: 0.95rem;
+	}
+	#solution .solutions-box .column .img-box{
+		display: flex;
+		align-items: flex-end;
+		width: 38%;
+	}
+	#solution .solutions-box .column .img-box img{
+		width: 100%;
+	}
+	#solution .solution-inner-cta{
+		padding:  1.5rem 0 3.6rem;
+	background-color:#fffbe6;
+	}
+
+	
+	
+	
+	
+	
+	
+	
+
+	
+	
+	
+	.buckup-box {
+		padding: 3rem 0;
+	}
+	.buckup-box .inner-box {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		width: 1200px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.buckup-box .inner-box .column {
+		width: 48%;
+		margin-bottom: 2rem;
+	}
+	.buckup-box .inner-box .column .title {
+		font-size: 1.3rem;
+		margin-bottom: 0.5rem;
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	/*--------------------- ダイレクトゼミの特徴 --------------------------*/
+	.merit .inner {
+		width: 1000px;
+		margin: 0 auto;
+	}
+
+	.merit .inner .icon {
+		width: 140px;
+	}
+
+	.merit .inner .box .image {
+		display: block;
+		width: 400px;
+		height: auto;
+		margin: 0 auto 1.4rem;
+	}
+
+	.merit .inner .box .movie-box {
+		width: 100%;
+	}
+
+	.merit .inner .box .movie-box div {
+		width: 24%;
+		margin-bottom: 0;
+	}
+
+	/*--------------------- コース・料金 --------------------------*/
+	.course {
+		/*	width: 800px;*/
+		width: 100%;
+		margin: 0 auto 5rem;
+	}
+
+	.course .desc {
+		width: 800px;
+		margin: 0 auto 1rem;
+	}
+
+	.tab_container .tab_content {
+		width: 100%;
+	}
+
+	.tab_container .tab_content .price-table_sp {
+		display: none;
+	}
+
+	.tab_container .tab_content .price-table_pc {
+		display: block;
+		width: auto;
+		height: auto;
+		margin: 1rem auto 1.2rem;
+	}
+
+	.tab_container .exp {
+		display: none;
+	}
+
+	.tab_container input:not(:checked)+.tab_item:hover {
+		opacity: 0.8;
+	}
+
+	.course .price_sp {
+		display: none;
+	}
+
+	.course .price_pc {
+		display: block;
+		width: auto;
+		height: auto;
+		margin: 0 auto 2rem;
+	}
+
+	.course .exp-box {
+		padding: 2rem 0 2.5rem;
+		margin-bottom: 4rem;
+	}
+
+	.course .exp-box h3 {
+		display: block;
+		margin-bottom: 1rem;
+		font-size: 1.5rem;
+		color: #0060B5;
+		font-weight: bold;
+	}
+
+	.course .exp-box .img_sp {
+		display: none;
+	}
+
+	.course .exp-box .img_pc {
+		display: block;
+		width: 1000px;
+		margin: 0 auto;
+	}
+
+	/*--------------------- 生徒・保護者様の声 ------------------------------*/
+	.voice {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		width: 1000px;
+		margin: 0 auto 3rem;
+	}
+
+	.voice .column {
+		width: 48%;
+		margin-bottom: 2rem;
+		padding: 1.8rem;
+		border: 2px solid #27BDD6;
+	}
+
+	/* 生徒・保護者様の声 親子ver*/
+	.voice-pac .balloon {
+		padding: 0.8rem 10px;
+	}
+
+	.voice-pac .box .user-box {
+		margin: 0 auto 0.3rem;
+	}
+
+	.voice-pac .box .voice-box {
+		display: flex;
+		justify-content: space-around;
+	}
+
+	.voice-pac .box .voice-box .column2 {
+		width: 45%;
+	}
+
+	.voice-pac .box .voice-box .column2 .letter.h-280 {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 280px;
+	}
+
+	/*--------------------- 生徒・保護者様の声 動画部分 ------------------------------*/
+
+	.movie-box {
+		background-image: url("../images/voice_movie_bg_pc.png");
+		background-size: contain;
+		background-position: bottom center;
+		background-repeat: no-repeat;
+	}
+
+	.movie-box .movie-title {
+		font-size: 1.6rem;
+	}
+
+	.movie-box .movie-title img.movie-deco {
+		z-index: 3;
+		width: 150px;
+		top: -25px;
+		left: -45px;
+	}
+
+	.movie-chat .balloon-box .icon-box {
+		width: 80px;
+	}
+
+	.movie-chat .balloon-box p {
+		max-width: calc(100% - 100px);
+	}
+
+
+
+	/*--------------------- 講師紹介 ------------------------------*/
+	
+	.tutor2_lead-text,
+	.tutor2_tutors-img,
+	.tutor2_start-step {
+		width: 90%;
+		max-width: 1200px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.tutor2_only-text{
+		margin-bottom: 0.7rem;
+		font-size: 2.1rem;
+	}
+	.tutor2_lead-text{
+		font-size: 1.5rem;
+		text-align: center;
+	}
+	.tutor2_lead-text br{
+		display: inline-block;
+	}
+	.tutor2-section .tutor2_title{
+		font-size: 2.4rem;
+	}
+	.tutor2_tutors-img img{
+		width: 9.5%;
+	}
+
+	.tutor2_start-step{
+		padding: 3rem 0;
+	}
+	.tutor2_start-step_inner{
+		width: 90%;
+		margin: 0 auto;
+	}
+	.tutor2_step-title,
+	.tutor2_training-title
+	{
+		font-size: 2rem;
+	}
+	.tutor2_column-in-img{
+		display: flex;
+		justify-content: space-between;
+	}
+	.tutor2_column-in-img .text-box{
+		width: 52%;
+	}
+	.tutor2_column-in-img .img-box{
+		width: 45%;
+	}
+	.tutor2_column-in-img .img-box img{
+		width: 100%;
+	}
+	.tutor2_column-in-img .balloon{
+		font-size: 1.3rem;
+		padding: 0.4em 0.4em;
+	}
+	.tutor2_column-in-img .title{
+		font-size: 1.7rem;
+	}
+	.tutor2_column-in-img .text{
+		margin-bottom: 0;
+	}
+	.tutor2_column-in-img .text p{
+		font-size: 1.1rem;
+	}
+	.tutor2_point .column{
+		width: 24%;
+		margin: 0 auto 0.7em;
+		padding: 18px 0 20px;
+	}
+
+	.tutor2_point .column .number-box{
+		height: 2.5em;
+	}
+	.tutor2_training-lead{
+		font-size: 1.2rem;
+		text-align: center;
+	}
+	.tutor2_pro
+	{
+		font-size: 2.2rem;
+	}
+	.tutor2_lead-text, .tutor2_tutors-img, .tutor2_start-step{
+		max-width: 1400px;
+	}
+	.tutor {
+		width: 100%;
+		margin: 0 auto 3rem;
+	}
+
+	.tutor .catch {
+		font-size: 1.4rem;
+	}
+
+	.tutor .catch .s-text {
+		font-size: 1.1rem;
+	}
+
+	.tutor-feature-box {
+		display: flex;
+		justify-content: space-between;
+		width: 1000px;
+		margin: 0 auto 1.6rem;
+	}
+
+	.tutor-feature-box .feature-column {
+		width: 30%;
+		margin-bottom: 1rem;
+	}
+
+	.tutor-feature-box .feature-column .feature-image {
+		width: 100%;
+		margin: 0 auto 0.5rem;
+	}
+
+	.tutor-feature-box .feature-column .feature-title {
+		font-size: 1rem;
+	}
+
+	.tutor-feature-box .feature-column .feature-text {
+		font-size: 0.9rem;
+	}
+
+	.tutor .pc-tutor {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		width: 1000px;
+		margin: 0 auto 4rem;
+	}
+
+	/*
+	.tutor .sp-tutor{
+		display: none;
+	}
+  */
+	.tutor .pc-tutor .column {
+		width: 32%;
+		margin-bottom: 1rem;
+	}
+
+	.tutor .column .title {
+		font-size: 0.8rem;
+	}
+
+	.tutor .column .university {
+		font-size: 0.7rem;
+	}
+
+	.tutor .column .text {
+		font-size: 0.7rem;
+	}
+
+	.slick-prev {
+		z-index: 10;
+		left: 12%;
+	}
+
+	.slick-next {
+		z-index: 10;
+		right: 12%;
+	}
+
+	/*--------------------- 授業スタートまでの流れ ------------------------------*/
+	.flow .inner {
+		width: 800px;
+	}
+
+	.flow .column {
+		margin-bottom: 22px;
+		padding: 1.1rem 1rem;
+		border-radius: 14px;
+	}
+
+	/*.flow .column::before {
+		content: '';
+		position: absolute;
+		display: block;
+		width: 0;
+		height: 0;
+		left: 40px;
+		bottom: -15px;
+		border-top: 15px solid #fff;
+		border-right: 15px solid transparent;
+		border-left: 15px solid transparent;
+	}*/
+
+	.flow .column .upper .step {
+		width: 27%;
+	}
+
+	.flow .column .upper .title {
+		width: 73%;
+	}
+
+	.flow .column .under .icon>img {
+		width: 60%;
+	}
+
+	/*--------------------- よくある質問 ------------------------------*/
+	.faq {
+		width: 1000px;
+	}
+
+	/*--------------------- フォーム ------------------------------*/
+	.form .inner {
+		width: 800px;
+		margin: 0 auto;
+	}
+
+	.return-top-btn {
+		width: 400px;
+	}
+
+	/*--------------------- 応募フォーム --------------------------*/
+	.form .btn-box .btn {
+		width: 50%;
+	}
+
+	.form .btn-box .btn:hover {
+		opacity: 0.8;
+	}
+
+	#formWrap {
+		width: 800px;
+		margin: 2.5rem auto;
+	}
+	
+	
+		#form .cv-section-btn-box a:hover{
+		opacity: 0.8;
+	}
+	
+	#form .form-section-text{
+		padding: 0.6em 0.5em;
+		font-size: 1.2rem;
+	}
+
+	/*--------------------- フッター ------------------------------*/
+	.footer {
+		display: flex;
+		flex-direction: row-reverse;
+		justify-content: space-between;
+		align-items: center;
+		padding: 1.5rem 2.3rem 0.9rem;
+	}
+
+	.footer .logo-box {
+		width: 170px;
+		text-align: right;
+	}
+
+	.footer .logo-box .logo {
+		width: 170px;
+		height: auto;
+		margin-bottom: 1.6rem;
+	}
+
+	.footer .subpage-box {
+		flex-direction: row;
+		width: auto;
+		margin: 0;
+		font-size: 0.8rem;
+	}
+
+	.footer .subpage-box a {
+		position: relative;
+		display: inline-block;
+		margin-bottom: 0.7rem;
+		margin-right: 2rem;
+		padding-left: 10px;
+		line-height: 1;
+	}
+
+	.footer .copy {
+		width: 100%;
+		font-size: 0.7rem;
+	}
+
+	/*--------------------- 会社概要 --------------------------*/
+	table.style01 {
+		display: table;
+	}
+
+	table.style01,
+	table.style01 th,
+	table.style01 td {
+		border-collapse: collapse;
+		border: 2px solid #0060B5;
+	}
+
+	table.style01 th {
+		width: 130px;
+		text-align: center;
+		font-size: 1rem;
+		padding: 0.6rem;
+		display: table-cell;
+		margin-top: 0;
+		border-bottom: 2px solid #fff;
+		white-space: nowrap;
+	}
+
+	table.style01 tr:last-child>th {
+		border-bottom: 2px solid #0060B5;
+	}
+
+	table.style01 td {
+		width: auto;
+		font-size: 0.9rem;
+		padding: 0.9rem;
+		display: table-cell;
+	}
+
+	table.style01 td:last-child {
+		border: 2px solid #0060B5;
+	}
+
+
+	/*----------------------------------------------------
+LINE友達追加エリア
+----------------------------------------------------*/
+	.line-box {
+		width: 760px;
+		padding: 1.5rem 0;
+	}
+
+	.line-box .line-ttile {
+		padding: 0.6em 0.5em;
+		font-size: 1.2rem;
+	}
+
+	.line-box .line-ttile br.mobile {
+		display: none;
+	}
+
+	.line-box .line-text {
+		width: 90%;
+		/*font-size: 1.1rem;*/
+	}
+
+	.line-box .line-text br.mobile {
+		display: none;
+	}
+
+	.line-box .join-title {
+		margin-bottom: 0.5rem;
+		font-size: 1.3rem;
+	}
+
+	.line-box .boxes {
+		display: flex;
+		justify-content: space-between;
+		width: 60%;
+		margin: 0 auto;
+	}
+
+	.line-box .boxes div {
+		display: flex;
+		align-items: center;
+	}
+
+	.line-box .box-qr {
+		margin: 0 auto;
+	}
+
+/*----------------------------------------------------
+感想文スクロール
+----------------------------------------------------*/
+.impressions-box .impressions-title{
+	font-size: 2.2rem;
+}
+.impressions-box .impressions-text{
+	font-size: 1.7rem;
+}
+
+
+}/*PC用CSS閉じタグ*/
+
+@media screen and (min-width:1200px) {
+	/*--------------------- ヘッダー ----------------------------*/
+	.header {
+		width:98%;
+		max-width: 1900px;
+		margin: 0 auto;
+		padding: 0.5rem 0;
+	}
+
+	.header .logo {
+		width: 230px;
+	}
+
+	.header .btn:hover {
+		opacity: 0.8;
+	}
+
+	.header .pc-menu {
+		display: flex;
+	}
+
+	.header .pc-menu li {
+		padding: 0.2rem 0.8rem;
+		border-right: 1px solid #ccc;
+		font-size: 0.8rem;
+	}
+
+	.header .pc-menu li:last-of-type {
+		border-right: none;
+	}
+}/*1200px以上のPC用CSS閉じタグ*/
