@@ -127,8 +127,8 @@
 }
 
 .amb-family-col .ambassador-card__img-wrap {
-  aspect-ratio: 16 / 9;
-  max-height: 260px;
+  aspect-ratio: 3 / 2;
+  max-height: none;
 }
 
 /* カードグリッド（旧：2枚横並び） */
@@ -162,17 +162,29 @@
 }
 
 .ambassador-card__tag {
-  background: #0060B5;
+  background: linear-gradient(135deg, #003A70 0%, #0060B5 100%);
   color: #fff;
-  font-size: 12px;
+  font-size: 18px;
   font-weight: bold;
-  padding: 7px 14px;
+  padding: 16px 20px;
   line-height: 1.5;
+  letter-spacing: 0.06em;
+  text-align: center;
+  border-bottom: 4px solid #22b3c8;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.3);
+  position: relative;
+}
+
+.ambassador-card__tag::before {
+  content: '\25CF';
+  margin-right: 8px;
+  color: #FFF985;
+  font-size: 14px;
 }
 
 .ambassador-card__img-wrap {
   width: 100%;
-  aspect-ratio: 4/3;
+  aspect-ratio: 3/2;
   overflow: hidden;
 }
 
@@ -180,7 +192,7 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center top;
+  object-position: center 20%;
   display: block;
 }
 
@@ -210,60 +222,88 @@
 }
 
 .ambassador-card__body {
-  padding: 14px 16px;
+  padding: 18px 20px;
   flex: 1;
+  background: #fff;
 }
 
 .ambassador-card__name {
-  font-size: 14px;
+  font-size: 18px;
   font-weight: bold;
-  color: #0060B5;
-  margin-bottom: 8px;
+  color: #fff;
+  margin-bottom: 14px;
+  padding: 10px 16px;
+  background: linear-gradient(135deg, #003A70 0%, #0060B5 100%);
+  border-left: 5px solid #FFF985;
+  border-radius: 0 6px 6px 0;
+  display: block;
+  letter-spacing: 0.04em;
+  box-shadow: 0 2px 8px rgba(0, 60, 120, 0.2);
 }
 
 .ambassador-card__change {
   display: flex;
   flex-direction: column;
-  gap: 4px;
-  margin-bottom: 10px;
-  font-size: 13px;
+  gap: 8px;
+  margin-bottom: 16px;
+  font-size: 14px;
+  background: #f0f8ff;
+  border-radius: 8px;
+  padding: 14px 16px;
+  border: 2px solid #22b3c8;
+  box-shadow: 0 2px 8px rgba(34, 179, 200, 0.1);
 }
 
 .ambassador-card__change .before {
   color: #888;
   text-decoration: line-through;
+  font-size: 14px;
+  padding: 4px 8px;
+  background: #f5f5f5;
+  border-radius: 4px;
+  display: inline-block;
 }
 
 .ambassador-card__change .arrow {
-  color: #0060B5;
-  font-size: 16px;
+  color: #22b3c8;
+  font-size: 22px;
   font-weight: bold;
   text-align: center;
+  line-height: 1;
 }
 
 .ambassador-card__change .after {
-  color: #15BA55;
+  color: #003A70;
   font-weight: bold;
-  font-size: 13px;
+  font-size: 17px;
+  line-height: 1.5;
+  padding: 10px 14px;
+  background: linear-gradient(135deg, #e8f4ff 0%, #d0eaff 100%);
+  border-radius: 6px;
+  border-left: 5px solid #0060B5;
+  display: block;
 }
 
 .ambassador-card__quote {
-  background: #f0f8ff;
-  border-left: 3px solid #0060B5;
-  padding: 8px 10px;
-  font-size: 12px;
-  color: #444;
-  line-height: 1.6;
-  border-radius: 0 4px 4px 0;
+  background: linear-gradient(135deg, #f0f8ff 0%, #e8f4ff 100%);
+  border-left: 5px solid #22b3c8;
+  padding: 14px 16px;
+  font-size: 14px;
+  color: #333;
+  line-height: 1.8;
+  border-radius: 0 8px 8px 0;
   margin: 0;
+  font-style: italic;
+  box-shadow: 0 2px 8px rgba(34, 179, 200, 0.1);
 }
 
 .ambassador-card__quote cite {
   display: block;
-  margin-top: 5px;
-  font-size: 11px;
-  color: #888;
+  margin-top: 6px;
+  font-size: 12px;
+  color: #0060B5;
   font-style: normal;
+  font-weight: bold;
 }
 
 .ambassador-card__link {
@@ -731,7 +771,7 @@
   overflow: hidden;
   background: #eef5fb;
   border-radius: 6px;
-  aspect-ratio: 16 / 9;
+  aspect-ratio: 3 / 2;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -741,7 +781,7 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center center;
+  object-position: center 20%;
   display: block;
 }
 
@@ -855,7 +895,7 @@
 
   .amb-timeline-img-wrap {
     width: 100%;
-    aspect-ratio: 16 / 9;
+    aspect-ratio: 3 / 2;
     min-height: unset;
     height: auto;
   }
@@ -883,6 +923,7 @@
 
   .amb-timeline-img-wrap {
     width: 200px;
+    aspect-ratio: 3 / 2;
   }
 
   .amb-cta-btn {
